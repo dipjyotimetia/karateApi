@@ -1,0 +1,40 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "run first feature file",
+        "description": "",
+        "id": "first;run-first-feature-file",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 353563780,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "assert 1 \u003d\u003d 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 \u003d\u003d 1",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "first",
+    "description": "",
+    "id": "first",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/cukeoptions/first.feature"
+  }
+]

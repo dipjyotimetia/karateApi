@@ -1,0 +1,40 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "run second feature file",
+        "description": "",
+        "id": "second;run-second-feature-file",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 348626761,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "assert 2 \u003d\u003d 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2 \u003d\u003d 2",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "second",
+    "description": "",
+    "id": "second",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/cukeoptions/second.feature"
+  }
+]

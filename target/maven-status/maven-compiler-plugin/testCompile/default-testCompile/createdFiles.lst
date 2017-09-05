@@ -1,0 +1,4 @@
+com\intuit\karate\testng\KarateTestngTest.class
+com\intuit\karate\testng\cukeoptions\SecondRunner.class
+com\intuit\karate\testng\smoke\SmokeRunner.class
+com\intuit\karate\testng\cukeoptions\FirstRunner.class

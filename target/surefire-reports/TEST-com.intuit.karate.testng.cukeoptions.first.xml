@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="first" skipped="0" tests="1" time="0.353564">
+<testcase classname="com.intuit.karate.testng.cukeoptions.first" name="run first feature file" time="0.353564">
+<system-out><![CDATA[Then assert 1 == 1..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

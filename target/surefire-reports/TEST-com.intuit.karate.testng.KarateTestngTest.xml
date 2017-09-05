@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="1" name="com.intuit.karate.testng.KarateTestngTest" time="9.14" errors="0" skipped="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="KarateApi"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="NUMBER_OF_PROCESSORS" value="4"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="874cc2860435506a"/>
+    <property name="POM_ARTIFACTID" value="karate-testng"/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="karate-testng"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\Windows\TEMP"/>
+    <property name="java.runtime.version" value="1.8.0_101-b13"/>
+    <property name="ANT_HOME" value="C:\Resourses\ApacheAnt"/>
+    <property name="WINSW_SERVICE_ID" value="Jenkins"/>
+    <property name="user.name" value="DIPJYOTI-PC$"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="CommonProgramW6432" value="C:\Program Files\Common Files"/>
+    <property name="ProgramFiles" value="C:\Program Files (x86)"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="KarateApi"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/KarateApi/2/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#2"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Local"/>
+    <property name="java.version" value="1.8.0_101"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="USERNAME" value="DIPJYOTI-PC$"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="PROCESSOR_ARCHITEW6432" value="AMD64"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="2"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="ARTIFACTORY_HOME" value="C:\Resourses\artifactory-oss-5.3.1"/>
+    <property name="user.country" value="US"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="VS140COMNTOOLS" value="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="6.3"/>
+    <property name="MW_HOME" value="C:\OracleATS\wls"/>
+    <property name="RUN_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/KarateApi/2/display/redirect"/>
+    <property name="POM_VERSION" value="0.5.0"/>
+    <property name="TMP" value="C:\Windows\TEMP"/>
+    <property name="HELPER_SERVICE_PORT" value="7979"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.101-b13"/>
+    <property name="user.variant" value=""/>
+    <property name="JOB_DISPLAY_URL" value="http://unconfigured-jenkins-location/job/KarateApi/display/redirect"/>
+    <property name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="GRADLE_HOME" value="C:\gradle-4.0.1"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_101"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files (x86)\Common Files"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="user.script" value=""/>
+    <property name="COMPUTERNAME" value="DIPJYOTI-PC"/>
+    <property name="SERVICE_ID" value="Jenkins"/>
+    <property name="POM_GROUPID" value="com.intuit.karate"/>
+    <property name="VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\"/>
+    <property name="user.home" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-KarateApi-2"/>
+    <property name="JENKINS_SERVER_COOKIE" value="874cc2860435506a"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="USERPROFILE" value="C:\Windows\system32\config\systemprofile"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_101\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\apache-maven-3.3.9/bin;C:\Program Files\Java\jdk1.8.0_101/bin;C:\Program Files\Java\jdk1.8.0_101/bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Users\Dipjyoti\AppData\Roaming\Oracle\ATS\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Dell\DW WLAN Card;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\PostgreSQL\pg95\bin;C:\Resourses\ApacheMaven\bin;C:\Resourses\ApacheAnt\bin;C:\Program Files\Java\jdk1.8.0_101\bin;C:\gradle-4.0.1\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Users\Dipjyoti\AppData\Local\Android\sdk\tools;C:\Users\Dipjyoti\AppData\Local\Android\sdk\platform-tools;C:\Resourses\apache-activemq-5.14.0\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;%TRICENTIS_PROJECTS%;C:\Program Files (x86)\Skype\Phone\;C:\Resourses\artifactory-oss-5.3.1\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Windows\system32\config\systemprofile\AppData\Roaming"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.3.9"/>
+    <property name="java.class.path" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.11.jar;C:\Program Files\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\apache-maven-3.3.9/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main C:\Program Files\apache-maven-3.3.9 C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.7.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.11.jar C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.11.jar 50603"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_101/bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Users\Dipjyoti\AppData\Roaming\Oracle\ATS\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Dell\DW WLAN Card;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\PostgreSQL\pg95\bin;C:\Resourses\ApacheMaven\bin;C:\Resourses\ApacheAnt\bin;C:\Program Files\Java\jdk1.8.0_101\bin;C:\gradle-4.0.1\bin;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 &amp; MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Users\Dipjyoti\AppData\Local\Android\sdk\tools;C:\Users\Dipjyoti\AppData\Local\Android\sdk\platform-tools;C:\Resourses\apache-activemq-5.14.0\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;%TRICENTIS_PROJECTS%;C:\Program Files (x86)\Skype\Phone\;C:\Resourses\artifactory-oss-5.3.1\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_101/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\Program Files\apache-maven-3.3.9"/>
+    <property name="java.io.tmpdir" value="C:\Windows\TEMP\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Program Files\apache-maven-3.3.9/bin"/>
+    <property name="ProgramFiles(x86)" value="C:\Program Files (x86)"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\Research\karate-master\karate-testng"/>
+    <property name="ACTIVE_MQ" value="C:\Resourses\apache-activemq-5.14.0"/>
+    <property name="USERDOMAIN" value="WORKGROUP"/>
+    <property name="line.separator" value="
+"/>
+    <property name="MAVEN_HOME" value="C:\Program Files\apache-maven-3.3.9"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="2"/>
+    <property name="BASE" value="C:\Program Files (x86)\Jenkins"/>
+    <property name="ANDROID_HOME" value="C:\Users\Dipjyoti\AppData\Local\Android\sdk"/>
+    <property name="PROCESSOR_REVISION" value="3a09"/>
+    <property name="ProgramW6432" value="C:\Program Files"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.11.jar"/>
+    <property name="OATS_HOME" value="C:\OracleATS"/>
+    <property name="WL_HOME" value="C:\OracleATS\wls\wlserver"/>
+    <property name="WORKSPACE" value="C:\Program Files (x86)\Jenkins\workspace\KarateApi"/>
+    <property name="maven3.interceptor.common" value="C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.11.jar"/>
+    <property name="WINSW_EXECUTABLE" value="C:\Program Files (x86)\Jenkins\jenkins.exe"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
+  </properties>
+  <testcase classname="com.intuit.karate.testng.KarateTestngTest" name="feature" time="2.054"/>
+  <testcase classname="com.intuit.karate.testng.KarateTestngTest" name="feature" time="0.144"/>
+  <testcase classname="com.intuit.karate.testng.KarateTestngTest" name="feature" time="0.497"/>
+  <testcase classname="com.intuit.karate.testng.KarateTestngTest" name="testParallel" time="3.77">
+    <failure message="expected [true] but found [there are scenario failures]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [there are scenario failures]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.intuit.karate.testng.KarateRunner.testParallel(KarateRunner.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</failure>
+    <system-out>01:44:07.521 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+01:44:07.552 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - &gt;&gt; target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+01:44:07.552 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - &gt;&gt; target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+01:44:07.552 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - &gt;&gt; target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+01:44:07.582 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - &gt;&gt;&gt;&gt; feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.582 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - &gt;&gt;&gt;&gt; feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+01:44:07.582 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - &gt;&gt;&gt;&gt; feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+01:44:07.586 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.586 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+01:44:07.588 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+01:44:07.964 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - &lt;&lt;&lt;&lt; feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.964 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - &lt;&lt;&lt;&lt; feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+---------------------------------------------------------
+feature: com.intuit.karate.testng.cukeoptions.first
+report: target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+---------------------------------------------------------
+feature: com.intuit.karate.testng.cukeoptions.second
+report: target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+scenarios:  1 | failed:  0 | skipped:  0 | time: 0.353564
+---------------------------------------------------------
+scenarios:  1 | failed:  0 | skipped:  0 | time: 0.348627
+---------------------------------------------------------
+01:44:08.057 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@3aacf9cc
+01:44:08.123 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@401f9d62
+01:44:08.197 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - &lt;&lt;&lt;&lt; feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+---------------------------------------------------------
+feature: com.intuit.karate.testng.smoke.smoke
+report: target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+scenarios:  1 | failed:  0 | skipped:  0 | time: 0.544635
+---------------------------------------------------------
+=========================================================
+elapsed time: 0.687000 | test time: 1.246826
+thread count:  5 | parallel efficiency: 0.362977
+scenarios:   3 | failed:   0 | skipped:   0
+=========================================================
+</system-out>
+    <system-err>ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property &apos;org.apache.logging.log4j.simplelog.StatusLogger.level&apos; to TRACE to show Log4j2 internal initialization logging.
+</system-err>
+  </testcase>
+</testsuite>

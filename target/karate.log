@@ -1,0 +1,105 @@
+00:22:03.993 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+00:22:04.316 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+00:22:06.422 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+00:22:06.583 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+00:22:06.795 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@636e8cc
+00:22:06.959 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@4eed46ee
+00:22:07.053 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+00:22:07.089 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+00:22:07.089 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+00:22:07.089 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+00:22:07.129 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+00:22:07.128 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+00:22:07.131 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+00:22:07.132 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+00:22:07.149 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+00:22:07.156 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+00:22:07.538 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+00:22:07.549 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+00:22:07.620 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@4c106e32
+00:22:07.668 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@1f80b5ae
+00:22:07.755 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+00:22:45.881 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+00:22:46.178 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+00:22:48.807 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+00:22:48.977 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+00:22:49.226 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@636e8cc
+00:22:49.436 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@4eed46ee
+00:22:49.598 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+00:22:49.667 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+00:22:49.667 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+00:22:49.667 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+00:22:49.701 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+00:22:49.703 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+00:22:49.701 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+00:22:49.706 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+00:22:49.706 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+00:22:49.706 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+00:22:50.219 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+00:22:50.241 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+00:22:50.319 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@186e37ab
+00:22:50.348 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@71f4972
+00:22:50.427 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+00:33:01.724 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+00:33:02.019 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+00:33:03.954 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+00:33:04.122 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+00:33:04.339 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@636e8cc
+00:33:04.500 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@4eed46ee
+00:33:04.584 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+00:33:04.615 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+00:33:04.615 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+00:33:04.615 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+00:33:04.638 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+00:33:04.638 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+00:33:04.639 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+00:33:04.641 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+00:33:04.641 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+00:33:04.641 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+00:33:05.016 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+00:33:05.053 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+00:33:05.108 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@5895f217
+00:33:05.152 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@38409bd5
+00:33:05.232 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+01:40:10.280 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+01:40:10.586 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+01:40:12.732 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+01:40:12.925 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+01:40:13.230 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@636e8cc
+01:40:13.421 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@4eed46ee
+01:40:13.537 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+01:40:13.568 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+01:40:13.568 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+01:40:13.568 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+01:40:13.593 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+01:40:13.593 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+01:40:13.596 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+01:40:13.593 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+01:40:13.598 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+01:40:13.596 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+01:40:14.059 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+01:40:14.081 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+01:40:14.128 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@54ac4f1
+01:40:14.179 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@23945dd7
+01:40:14.277 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+01:44:04.520 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+01:44:04.807 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+01:44:06.862 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.020 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+01:44:07.252 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@636e8cc
+01:44:07.432 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@4eed46ee
+01:44:07.521 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+01:44:07.552 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+01:44:07.552 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+01:44:07.552 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+01:44:07.582 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.582 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+01:44:07.582 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+01:44:07.586 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.586 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+01:44:07.588 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+01:44:07.964 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 3 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+01:44:07.964 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 3 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+01:44:08.057 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@3aacf9cc
+01:44:08.123 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@401f9d62
+01:44:08.197 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature

@@ -1,0 +1,1400 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "get for complex things such as xpath functions",
+        "description": "",
+        "id": "xml-and-xpath-demos;get-for-complex-things-such-as-xpath-functions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 48983920,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def foo \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "\u003crecords\u003e\n  \u003crecord index\u003d\"1\"\u003ea\u003c/record\u003e\n  \u003crecord index\u003d\"2\"\u003eb\u003c/record\u003e\n  \u003crecord index\u003d\"3\" foo\u003d\"bar\"\u003ec\u003c/record\u003e\n\u003c/records\u003e"
+            }
+          },
+          {
+            "result": {
+              "duration": 48053250,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "assert foo.records.record.length \u003d\u003d 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo.records.record.length \u003d\u003d 3",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2933230,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "def count \u003d get foo count(/records//record)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "count",
+                  "offset": 4
+                },
+                {
+                  "val": "get foo count(/records//record)",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 13017466,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "assert count \u003d\u003d 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "count \u003d\u003d 3",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1447525,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "def second \u003d get foo //record[@index\u003d2]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "second",
+                  "offset": 4
+                },
+                {
+                  "val": "get foo //record[@index\u003d2]",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 19776828,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "assert second \u003d\u003d \u0027b\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "second \u003d\u003d \u0027b\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5861124,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "match foo //record[@foo\u003d\u0027bar\u0027] \u003d\u003d \u0027c\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {
+                  "val": " //record[@foo\u003d\u0027bar\u0027]",
+                  "offset": 9
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 31
+                },
+                {
+                  "val": "\u0027c\u0027",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 19955819,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "match foo \u003d\u003d \u003crecords\u003e\u003crecord index\u003d\"1\"\u003ea\u003c/record\u003e\u003crecord index\u003d\"#? _ \u0026gt; 1\"\u003eb\u003c/record\u003e\u003crecord index\u003d\"3\" foo\u003d\"bar\"\u003e#string\u003c/record\u003e\u003c/records\u003e",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u003crecords\u003e\u003crecord index\u003d\"1\"\u003ea\u003c/record\u003e\u003crecord index\u003d\"#? _ \u0026gt; 1\"\u003eb\u003c/record\u003e\u003crecord index\u003d\"3\" foo\u003d\"bar\"\u003e#string\u003c/record\u003e\u003c/records\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2107656,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "def xml \u003d \u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\"?\u003e \u003cresponse\u003e \u003cresult\u003esucceed\u003c/result\u003e \u003crecords\u003e \u003crecord\u003e \u003cbrowser_port\u003e8008\u003c/browser_port\u003e \u003ccurrent_date_time\u003e2017-04-03 20:29:58 CDT\u003c/current_date_time\u003e \u003cdate_time_server_started\u003e2017-03-21 12:23:55 CDT\u003c/date_time_server_started\u003e \u003cos_version\u003eRed Hat Enterprise Linux 6 2.6.32-573.12.1.el6.x86_64, 64 Bit, x86_64\u003c/os_version\u003e \u003cproduct_version\u003eR04M001170316\u003c/product_version\u003e \u003cproduct_database_version\u003e20170131131718\u003c/product_database_version\u003e \u003creplication_heartbeat_timestamp\u003e2017-04-03 20:25:00 CDT\u003c/replication_heartbeat_timestamp\u003e \u003c/record\u003e \u003c/records\u003e \u003c/response\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xml",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\"?\u003e \u003cresponse\u003e \u003cresult\u003esucceed\u003c/result\u003e \u003crecords\u003e \u003crecord\u003e \u003cbrowser_port\u003e8008\u003c/browser_port\u003e \u003ccurrent_date_time\u003e2017-04-03 20:29:58 CDT\u003c/current_date_time\u003e \u003cdate_time_server_started\u003e2017-03-21 12:23:55 CDT\u003c/date_time_server_started\u003e \u003cos_version\u003eRed Hat Enterprise Linux 6 2.6.32-573.12.1.el6.x86_64, 64 Bit, x86_64\u003c/os_version\u003e \u003cproduct_version\u003eR04M001170316\u003c/product_version\u003e \u003cproduct_database_version\u003e20170131131718\u003c/product_database_version\u003e \u003creplication_heartbeat_timestamp\u003e2017-04-03 20:25:00 CDT\u003c/replication_heartbeat_timestamp\u003e \u003c/record\u003e \u003c/records\u003e \u003c/response\u003e",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2901620,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "def count \u003d get xml count(/response/records//record)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "count",
+                  "offset": 4
+                },
+                {
+                  "val": "get xml count(/response/records//record)",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5307730,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "assert count \u003d\u003d 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "count \u003d\u003d 1",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6153421,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "match xml/response/result \u003d\u003d \u0027succeed\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "xml/response/result",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 26
+                },
+                {
+                  "val": "\u0027succeed\u0027",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "when xpath exressions return xml chunks (or node lists)",
+        "description": "",
+        "id": "xml-and-xpath-demos;when-xpath-exressions-return-xml-chunks-(or-node-lists)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55945672,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "def response \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "response",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 33,
+              "value": "\u003cteachers\u003e\n\t\u003cteacher department\u003d\"science\" id\u003d\"309\"\u003e\n\t\t\u003csubject\u003emath\u003c/subject\u003e\n\t\t\u003csubject\u003ephysics\u003c/subject\u003e\n\t\u003c/teacher\u003e\n\t\u003cteacher department\u003d\"arts\" id\u003d\"310\"\u003e\n\t\t\u003csubject\u003epolitical education\u003c/subject\u003e\n\t\t\u003csubject\u003eenglish\u003c/subject\u003e\n\t\u003c/teacher\u003e\n\u003c/teachers\u003e"
+            }
+          },
+          {
+            "result": {
+              "duration": 1574379,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "def expected \u003d \u003cteacher department\u003d\"science\" id\u003d\"309\"\u003e\u003csubject\u003emath\u003c/subject\u003e\u003csubject\u003ephysics\u003c/subject\u003e\u003c/teacher\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "expected",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003cteacher department\u003d\"science\" id\u003d\"309\"\u003e\u003csubject\u003emath\u003c/subject\u003e\u003csubject\u003ephysics\u003c/subject\u003e\u003c/teacher\u003e",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2419248,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "def teacher \u003d //teacher[@department\u003d\u0027science\u0027]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teacher",
+                  "offset": 4
+                },
+                {
+                  "val": "//teacher[@department\u003d\u0027science\u0027]",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8207297,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "match teacher \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "teacher",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                },
+                {
+                  "val": "expected",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2210288,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "def teacher \u003d get response //teacher[@department\u003d\u0027science\u0027]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teacher",
+                  "offset": 4
+                },
+                {
+                  "val": "get response //teacher[@department\u003d\u0027science\u0027]",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 17044347,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "match teacher \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "teacher",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                },
+                {
+                  "val": "expected",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 12448062,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "match //teacher[@department\u003d\u0027science\u0027] \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "//teacher[@department\u003d\u0027science\u0027]",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 39
+                },
+                {
+                  "val": "expected",
+                  "offset": 42
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 139991,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "def expected \u003d [\u0027math\u0027, \u0027physics\u0027]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "expected",
+                  "offset": 4
+                },
+                {
+                  "val": "[\u0027math\u0027, \u0027physics\u0027]",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2693071,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "def subjects \u003d //teacher[@department\u003d\u0027science\u0027]/subject",
+            "match": {
+              "arguments": [
+                {
+                  "val": "subjects",
+                  "offset": 4
+                },
+                {
+                  "val": "//teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4881191,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "match subjects \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "subjects",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 15
+                },
+                {
+                  "val": "expected",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2865083,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "def subjects \u003d get response //teacher[@department\u003d\u0027science\u0027]/subject",
+            "match": {
+              "arguments": [
+                {
+                  "val": "subjects",
+                  "offset": 4
+                },
+                {
+                  "val": "get response //teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5818018,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "match subjects \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "subjects",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 15
+                },
+                {
+                  "val": "expected",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 27358890,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "match //teacher[@department\u003d\u0027science\u0027]/subject \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "//teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 47
+                },
+                {
+                  "val": "expected",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1697949,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "match //teacher[@department\u003d\u0027science\u0027]/subject \u003d\u003d [\u0027math\u0027, \u0027physics\u0027]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "//teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 47
+                },
+                {
+                  "val": "[\u0027math\u0027, \u0027physics\u0027]",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3594182,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "match //teacher[@department\u003d\u0027science\u0027]/subject contains [\u0027physics\u0027, \u0027math\u0027]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "//teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " [\u0027physics\u0027, \u0027math\u0027]",
+                  "offset": 55
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10723430,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "def teachers \u003d response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teachers",
+                  "offset": 4
+                },
+                {
+                  "val": "response",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2989883,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "def subjects \u003d get teachers //teacher[@department\u003d\u0027science\u0027]/subject",
+            "match": {
+              "arguments": [
+                {
+                  "val": "subjects",
+                  "offset": 4
+                },
+                {
+                  "val": "get teachers //teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 360855,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "match subjects contains [\u0027physics\u0027, \u0027math\u0027]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "subjects",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " [\u0027physics\u0027, \u0027math\u0027]",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2773124,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "match teachers //teacher[@department\u003d\u0027science\u0027]/subject \u003d\u003d [\u0027math\u0027, \u0027physics\u0027]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "teachers",
+                  "offset": 6
+                },
+                {
+                  "val": " //teacher[@department\u003d\u0027science\u0027]/subject",
+                  "offset": 14
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 56
+                },
+                {
+                  "val": "[\u0027math\u0027, \u0027physics\u0027]",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 89,
+        "name": "conditionally build xml from scenario-outline and examples",
+        "description": "",
+        "id": "xml-and-xpath-demos;conditionally-build-xml-from-scenario-outline-and-examples;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 64145991,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 68,
+                "value": "# this is an extreme example, you normally will never need to do this"
+              }
+            ],
+            "line": 70,
+            "name": "def base \u003d \u003cquery\u003e\u003cname\u003e\u003c/name\u003e\u003c/query\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003cquery\u003e\u003cname\u003e\u003c/name\u003e\u003c/query\u003e",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3724730,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "def firstName \u003d \u0027John\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstName",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027John\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 20128241,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "def lastName \u003d \u0027Smith\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastName",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027Smith\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4963707,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "def age \u003d \u002720\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 4
+                },
+                {
+                  "val": "\u002720\u0027",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7563998,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "def builder \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "builder",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 76,
+              "value": "function() {\n  if (firstName) karate.set(\u0027base\u0027, \u0027/query/name\u0027, \u0027\u003cfirstName\u003e#(firstName)\u003c/firstName\u003e\u0027);\n  if (lastName) karate.set(\u0027base\u0027, \u0027/query/name\u0027, \u0027\u003clastName\u003e#(lastName)\u003c/lastName\u003e\u0027);\n  if (age) karate.set(\u0027base\u0027, \u0027/query\u0027, \u0027\u003cage\u003e#(age)\u003c/age\u003e\u0027);  \n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 57767190,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "call builder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "builder",
+                  "offset": 5
+                },
+                {}
+              ],
+              "location": "StepDefs.callAndUpdateConfigAndVars(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6209663,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "print base",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 90,
+        "name": "conditionally build xml from scenario-outline and examples",
+        "description": "",
+        "id": "xml-and-xpath-demos;conditionally-build-xml-from-scenario-outline-and-examples;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25949954,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 68,
+                "value": "# this is an extreme example, you normally will never need to do this"
+              }
+            ],
+            "line": 70,
+            "name": "def base \u003d \u003cquery\u003e\u003cname\u003e\u003c/name\u003e\u003c/query\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003cquery\u003e\u003cname\u003e\u003c/name\u003e\u003c/query\u003e",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6561897,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "def firstName \u003d \u0027Jane\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstName",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027Jane\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3776046,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "def lastName \u003d \u0027Doe\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastName",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027Doe\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 13236278,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "def age \u003d \u0027\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027\u0027",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5299930,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "def builder \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "builder",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 76,
+              "value": "function() {\n  if (firstName) karate.set(\u0027base\u0027, \u0027/query/name\u0027, \u0027\u003cfirstName\u003e#(firstName)\u003c/firstName\u003e\u0027);\n  if (lastName) karate.set(\u0027base\u0027, \u0027/query/name\u0027, \u0027\u003clastName\u003e#(lastName)\u003c/lastName\u003e\u0027);\n  if (age) karate.set(\u0027base\u0027, \u0027/query\u0027, \u0027\u003cage\u003e#(age)\u003c/age\u003e\u0027);  \n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 65083229,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "call builder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "builder",
+                  "offset": 5
+                },
+                {}
+              ],
+              "location": "StepDefs.callAndUpdateConfigAndVars(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5147624,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "print base",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 91,
+        "name": "conditionally build xml from scenario-outline and examples",
+        "description": "",
+        "id": "xml-and-xpath-demos;conditionally-build-xml-from-scenario-outline-and-examples;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30928851,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 68,
+                "value": "# this is an extreme example, you normally will never need to do this"
+              }
+            ],
+            "line": 70,
+            "name": "def base \u003d \u003cquery\u003e\u003cname\u003e\u003c/name\u003e\u003c/query\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003cquery\u003e\u003cname\u003e\u003c/name\u003e\u003c/query\u003e",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4719853,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "def firstName \u003d \u0027\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "firstName",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3764142,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "def lastName \u003d \u0027Waldo\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lastName",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027Waldo\u0027",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3789594,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "def age \u003d \u0027\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "age",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027\u0027",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5020770,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "def builder \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "builder",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 76,
+              "value": "function() {\n  if (firstName) karate.set(\u0027base\u0027, \u0027/query/name\u0027, \u0027\u003cfirstName\u003e#(firstName)\u003c/firstName\u003e\u0027);\n  if (lastName) karate.set(\u0027base\u0027, \u0027/query/name\u0027, \u0027\u003clastName\u003e#(lastName)\u003c/lastName\u003e\u0027);\n  if (age) karate.set(\u0027base\u0027, \u0027/query\u0027, \u0027\u003cage\u003e#(age)\u003c/age\u003e\u0027);  \n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 23471590,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "call builder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "builder",
+                  "offset": 5
+                },
+                {}
+              ],
+              "location": "StepDefs.callAndUpdateConfigAndVars(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4580684,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "print base",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 94,
+        "name": "test removing elements from xml from js",
+        "description": "",
+        "id": "xml-and-xpath-demos;test-removing-elements-from-xml-from-js",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23355410,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "def base \u003d \u003cquery\u003e\u003cname\u003efoo\u003c/name\u003e\u003c/query\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "base",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003cquery\u003e\u003cname\u003efoo\u003c/name\u003e\u003c/query\u003e",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3810941,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "def fun \u003d function(){ karate.remove(\u0027base\u0027, \u0027/query/name\u0027) }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(){ karate.remove(\u0027base\u0027, \u0027/query/name\u0027) }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10349849,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "call fun",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 5
+                },
+                {}
+              ],
+              "location": "StepDefs.callAndUpdateConfigAndVars(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2010772,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "match base \u003d\u003d \u003cquery/\u003e",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "base",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "\u003cquery/\u003e",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "xml and xpath demos",
+    "description": "",
+    "id": "xml-and-xpath-demos",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/xml-and-xpath.feature"
+  }
+]

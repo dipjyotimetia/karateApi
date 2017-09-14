@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="xml and xpath demos" skipped="0" tests="6" time="0.747606">
+<testcase classname="com.intuit.karate.testng.demos.xml-and-xpath" name="get for complex things such as xpath functions" time="0.1765">
+<system-out><![CDATA[* def foo =.................................................................passed
+* assert foo.records.record.length == 3.....................................passed
+* def count = get foo count(/records//record)...............................passed
+* assert count == 3.........................................................passed
+* def second = get foo //record[@index=2]...................................passed
+* assert second == 'b'......................................................passed
+* match foo //record[@foo='bar'] == 'c'.....................................passed
+* match foo == <records><record index="1">a</record><record index="#? _ &gt; 1">b</record><record index="3" foo="bar">#string</record></records>.passed
+* def xml = <?xml version="1.0" encoding="UTF-8"?> <response> <result>succeed</result> <records> <record> <browser_port>8008</browser_port> <current_date_time>2017-04-03 20:29:58 CDT</current_date_time> <date_time_server_started>2017-03-21 12:23:55 CDT</date_time_server_started> <os_version>Red Hat Enterprise Linux 6 2.6.32-573.12.1.el6.x86_64, 64 Bit, x86_64</os_version> <product_version>R04M001170316</product_version> <product_database_version>20170131131718</product_database_version> <replication_heartbeat_timestamp>2017-04-03 20:25:00 CDT</replication_heartbeat_timestamp> </record> </records> </response>.passed
+* def count = get xml count(/response/records//record)......................passed
+* assert count == 1.........................................................passed
+* match xml/response/result == 'succeed'....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.xml-and-xpath" name="when xpath exressions return xml chunks (or node lists)" time="0.165745">
+<system-out><![CDATA[* def response =............................................................passed
+* def expected = <teacher department="science" id="309"><subject>math</subject><subject>physics</subject></teacher>.passed
+* def teacher = //teacher[@department='science']............................passed
+* match teacher == expected.................................................passed
+* def teacher = get response //teacher[@department='science']...............passed
+* match teacher == expected.................................................passed
+* match //teacher[@department='science'] == expected........................passed
+* def expected = ['math', 'physics']........................................passed
+* def subjects = //teacher[@department='science']/subject...................passed
+* match subjects == expected................................................passed
+* def subjects = get response //teacher[@department='science']/subject......passed
+* match subjects == expected................................................passed
+* match //teacher[@department='science']/subject == expected................passed
+* match //teacher[@department='science']/subject == ['math', 'physics'].....passed
+* match //teacher[@department='science']/subject contains ['physics', 'math'].passed
+* def teachers = response...................................................passed
+* def subjects = get teachers //teacher[@department='science']/subject......passed
+* match subjects contains ['physics', 'math']...............................passed
+* match teachers //teacher[@department='science']/subject == ['math', 'physics'].passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.xml-and-xpath" name="conditionally build xml from scenario-outline and examples (1)" time="0.164504">
+<system-out><![CDATA[* def base = <query><name></name></query>...................................passed
+* def firstName = 'John'....................................................passed
+* def lastName = 'Smith'....................................................passed
+* def age = '20'............................................................passed
+* def builder =.............................................................passed
+* call builder..............................................................passed
+* print base................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.xml-and-xpath" name="conditionally build xml from scenario-outline and examples (2)" time="0.125055">
+<system-out><![CDATA[* def base = <query><name></name></query>...................................passed
+* def firstName = 'Jane'....................................................passed
+* def lastName = 'Doe'......................................................passed
+* def age = ''..............................................................passed
+* def builder =.............................................................passed
+* call builder..............................................................passed
+* print base................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.xml-and-xpath" name="conditionally build xml from scenario-outline and examples (3)" time="0.076275">
+<system-out><![CDATA[* def base = <query><name></name></query>...................................passed
+* def firstName = ''........................................................passed
+* def lastName = 'Waldo'....................................................passed
+* def age = ''..............................................................passed
+* def builder =.............................................................passed
+* call builder..............................................................passed
+* print base................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.xml-and-xpath" name="test removing elements from xml from js" time="0.039527">
+<system-out><![CDATA[* def base = <query><name>foo</name></query>................................passed
+* def fun = function(){ karate.remove('base', '/query/name') }..............passed
+* call fun..................................................................passed
+* match base == <query/>....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

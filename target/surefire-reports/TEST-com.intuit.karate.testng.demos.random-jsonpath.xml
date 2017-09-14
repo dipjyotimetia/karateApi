@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="com.intuit.karate.testng.demos.random-jsonpath" skipped="0" tests="1" time="0.305331">
+<testcase classname="com.intuit.karate.testng.demos.random-jsonpath" name="1" time="0.305331">
+<system-out><![CDATA[* def data = read('data.json')..............................................passed
+* def size1 = (data.Contents.Contents.length)...............................passed
+* def size2 = get data.Contents.Contents.length()...........................passed
+* assert size1 == size2.....................................................passed
+* def index = Math.floor(Math.random() * size1).............................passed
+* print 'selected index: ' + index..........................................passed
+* def item = (data.Contents.Contents[index])................................passed
+* def children_uuids = item.children_uuids..................................passed
+* match children_uuids == { item: ['item1_uuid', 'item2_uuid'] }............passed
+]]></system-out>
+</testcase>
+</testsuite>

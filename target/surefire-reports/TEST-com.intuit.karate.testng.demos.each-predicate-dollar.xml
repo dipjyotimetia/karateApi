@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="com.intuit.karate.testng.demos.each-predicate-dollar" skipped="0" tests="1" time="0.492827">
+<testcase classname="com.intuit.karate.testng.demos.each-predicate-dollar" name="1" time="0.492827">
+<system-out><![CDATA[Given def temperature = { celsius: 100, fahrenheit: 212 }...................passed
+Then match temperature contains { fahrenheit: '#? _ == $.celsius * 1.8 + 32' }.passed
+Then match temperature == { celsius: '#number', fahrenheit: '#($.celsius * 1.8 + 32)' }.passed
+Given def json =............................................................passed
+Then match each json.hotels contains { totalPrice: '#? _ == $.roomInformation[0].roomPrice' }.passed
+Then match each json.hotels == { roomInformation: '#array', totalPrice: '#($.roomInformation[0].roomPrice)' }.passed
+]]></system-out>
+</testcase>
+</testsuite>

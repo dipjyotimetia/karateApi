@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="reading files" skipped="0" tests="1" time="0.269697">
+<testcase classname="com.intuit.karate.testng.demos.read-from-relative-path" name="from a relative path" time="0.269697">
+<system-out><![CDATA[* def fun = read('../syntax/for-demos.js')..................................passed
+* assert fun() == 'foo'.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

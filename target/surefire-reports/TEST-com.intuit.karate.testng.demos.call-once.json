@@ -1,0 +1,254 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 232313894,
+              "error_message": "java.lang.RuntimeException: javascript evaluation failed: Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:383)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat ?.* def helper \u003d Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)(com/intuit/karate/testng/demos/call-once.feature:4)\r\nCaused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)\r\n\tat javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:379)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\r\n\tat java.lang.Thread.run(Thread.java:745)\r\nCaused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper\r\n\tat java.net.URLClassLoader.findClass(URLClassLoader.java:381)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:424)\r\n\tat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:357)\r\n\tat java.lang.Class.forName0(Native Method)\r\n\tat java.lang.Class.forName(Class.java:348)\r\n\tat jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)\r\n\tat jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)\r\n\tat jdk.nashorn.internal.scripts.Script$643$\\^eval\\_.:program(\u003ceval\u003e:1)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)\r\n\t... 33 more\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "def helper \u003d Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "helper",
+                  "offset": 4
+                },
+                {
+                  "val": "Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "generate random string",
+        "description": "",
+        "id": ";generate-random-string;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "def fun \u003d function(){ return Math.random().toString(36).substr(2, 10) }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(){ return Math.random().toString(36).substr(2, 10) }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "def result \u003d callonce fun",
+            "match": {
+              "arguments": [
+                {
+                  "val": "result",
+                  "offset": 4
+                },
+                {
+                  "val": "callonce fun",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "print \u0027first: \u0027 + result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027first: \u0027 + result",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "assert helper.isEqualToPrevious(result)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "helper.isEqualToPrevious(result)",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 113612282,
+              "error_message": "java.lang.RuntimeException: javascript evaluation failed: Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:383)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat ?.* def helper \u003d Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)(com/intuit/karate/testng/demos/call-once.feature:4)\r\nCaused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)\r\n\tat javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:379)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\r\n\tat java.lang.Thread.run(Thread.java:745)\r\nCaused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper\r\n\tat java.net.URLClassLoader.findClass(URLClassLoader.java:381)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:424)\r\n\tat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:357)\r\n\tat java.lang.Class.forName0(Native Method)\r\n\tat java.lang.Class.forName(Class.java:348)\r\n\tat jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)\r\n\tat jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)\r\n\tat jdk.nashorn.internal.scripts.Script$684$\\^eval\\_.:program(\u003ceval\u003e:1)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)\r\n\t... 33 more\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "def helper \u003d Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "helper",
+                  "offset": 4
+                },
+                {
+                  "val": "Java.type(\u0027com.intuit.karate.junit4.demos.CallOnceHelper\u0027)",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "generate random string",
+        "description": "",
+        "id": ";generate-random-string;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "def fun \u003d function(){ return Math.random().toString(36).substr(2, 10) }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(){ return Math.random().toString(36).substr(2, 10) }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "def result \u003d callonce fun",
+            "match": {
+              "arguments": [
+                {
+                  "val": "result",
+                  "offset": 4
+                },
+                {
+                  "val": "callonce fun",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "print \u0027second: \u0027 + result",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027second: \u0027 + result",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "assert helper.isEqualToPrevious(result)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "helper.isEqualToPrevious(result)",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/call-once.feature"
+  }
+]

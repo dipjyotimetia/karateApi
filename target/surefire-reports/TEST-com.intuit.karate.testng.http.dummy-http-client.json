@@ -1,0 +1,127 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "configure http client class",
+        "description": "",
+        "id": "swapping-an-http-client-on-the-fly;configure-http-client-class",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 113275648,
+              "error_message": "java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting\r\n\tat com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)\r\n\tat com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)\r\n\tat com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)\r\n\tat com.intuit.karate.StepDefs.configure(StepDefs.java:102)\r\n\tat ?.* configure httpClientClass \u003d \u0027com.intuit.karate.junit4.http.DummyHttpClient\u0027(com/intuit/karate/testng/http/dummy-http-client.feature:4)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "configure httpClientClass \u003d \u0027com.intuit.karate.junit4.http.DummyHttpClient\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "httpClientClass",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027com.intuit.karate.junit4.http.DummyHttpClient\u0027",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefs.configure(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "configure userDefined \u003d { name: \u0027Smith\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "userDefined",
+                  "offset": 10
+                },
+                {
+                  "val": "{ name: \u0027Smith\u0027 }",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefs.configure(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "url \u0027http://foo.bar\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027http://foo.bar\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "match response \u003d\u003d \u0027hello Smith\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 15
+                },
+                {
+                  "val": "\u0027hello Smith\u0027",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "swapping an http client on the fly",
+    "description": "",
+    "id": "swapping-an-http-client-on-the-fly",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/http/dummy-http-client.feature"
+  }
+]

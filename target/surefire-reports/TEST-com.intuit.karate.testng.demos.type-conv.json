@@ -1,0 +1,1410 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "string to json",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;string-to-json",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 93103891,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 4,
+                "value": "# this would be of type string (not JSON)"
+              }
+            ],
+            "line": 5,
+            "name": "def strVar \u003d \u0027{ \"foo\": \"bar\" }\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "strVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027{ \"foo\": \"bar\" }\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5646418,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "json jsonVar \u003d strVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 5
+                },
+                {
+                  "val": "strVar",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.castToJson(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 229896,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "match jsonVar \u003d\u003d { foo: \u0027bar\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                },
+                {
+                  "val": "{ foo: \u0027bar\u0027 }",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "json to string",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;json-to-string",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 93222123,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "def jsonVar \u003d { foo: \u0027bar\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 4
+                },
+                {
+                  "val": "{ foo: \u0027bar\u0027 }",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5727291,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "string strVar \u003d jsonVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "strVar",
+                  "offset": 7
+                },
+                {
+                  "val": "jsonVar",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.castToString(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 13422659,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "assert strVar \u003d\u003d \u0027{\"foo\":\"bar\"}\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "strVar \u003d\u003d \u0027{\"foo\":\"bar\"}\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "string to xml",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;string-to-xml",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 127849431,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "def strVar \u003d \u0027\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "strVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10952095,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "xml xmlVar \u003d strVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "strVar",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.castToXml(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 81760973,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "match xmlVar \u003d\u003d \u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "xmlVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "xml to string (incorrect)",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;xml-to-string-(incorrect)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 70720615,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "def xmlVar \u003d \u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8786143,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "string strVar \u003d xmlVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "strVar",
+                  "offset": 7
+                },
+                {
+                  "val": "xmlVar",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.castToString(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6687108,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 22,
+                "value": "# because of karate\u0027s internal map-like default representation, this happens. see \u0027xmlstring\u0027 below"
+              }
+            ],
+            "line": 23,
+            "name": "match strVar \u003d\u003d \u0027{\"root\":{\"foo\":\"bar\"}}\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "strVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027{\"root\":{\"foo\":\"bar\"}}\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "xml to string",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;xml-to-string",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 74176858,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "def xmlVar \u003d \u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 32597652,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 27,
+                "value": "# note that the keyword here is \u0027xmlstring\u0027 not \u0027string\u0027"
+              }
+            ],
+            "line": 28,
+            "name": "xmlstring strVar \u003d xmlVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "strVar",
+                  "offset": 10
+                },
+                {
+                  "val": "xmlVar",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefs.castToXmlString(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5675564,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "match strVar \u003d\u003d \u0027\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "strVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "xml to json",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;xml-to-json",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 256834386,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "def xmlVar \u003d \u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 37634433,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "json jsonVar \u003d xmlVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 5
+                },
+                {
+                  "val": "xmlVar",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.castToJson(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 218812,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "match jsonVar \u003d\u003d { root: { foo: \u0027bar\u0027 } }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                },
+                {
+                  "val": "{ root: { foo: \u0027bar\u0027 } }",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "json to xml",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;json-to-xml",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80705503,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "def jsonVar \u003d { root: { foo: \u0027bar\u0027 } }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 4
+                },
+                {
+                  "val": "{ root: { foo: \u0027bar\u0027 } }",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 45281769,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "xml xmlVar \u003d jsonVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "jsonVar",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.castToXml(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2999736,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "match xmlVar \u003d\u003d \u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "xmlVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "xml with attributes",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;xml-with-attributes",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 70665603,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "def xmlVar \u003d \u003croot\u003e\u003cfoo fizz\u003d\"buzz\"\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo fizz\u003d\"buzz\"\u003ebar\u003c/foo\u003e\u003c/root\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4139775,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "json jsonVar \u003d xmlVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 5
+                },
+                {
+                  "val": "xmlVar",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.castToJson(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 208138,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 44,
+                "value": "# it ain\u0027t pretty but this is how karate converts xml to a map-like object internally for parity with json"
+              }
+            ],
+            "line": 45,
+            "name": "match jsonVar \u003d\u003d { root: { foo: { _ : \u0027bar\u0027, @: { fizz: \u0027buzz\u0027 }}}}",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                },
+                {
+                  "val": "{ root: { foo: { _ : \u0027bar\u0027, @: { fizz: \u0027buzz\u0027 }}}}",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4547842,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 46,
+                "value": "# which means that json can be used instead of xpath"
+              }
+            ],
+            "line": 47,
+            "name": "match jsonVar $.root.foo._ \u003d\u003d \u0027bar\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $.root.foo._",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 27
+                },
+                {
+                  "val": "\u0027bar\u0027",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 351824,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "match jsonVar $.root.foo.@ \u003d\u003d { fizz: \u0027buzz\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $.root.foo.@",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 27
+                },
+                {
+                  "val": "{ fizz: \u0027buzz\u0027 }",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11442267,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "match jsonVar $.root.foo.@.fizz \u003d\u003d \u0027buzz\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $.root.foo.@.fizz",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 32
+                },
+                {
+                  "val": "\u0027buzz\u0027",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 268897,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "match jsonVar $..foo.@.fizz \u003d\u003d [\u0027buzz\u0027]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $..foo.@.fizz",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 28
+                },
+                {
+                  "val": "[\u0027buzz\u0027]",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10448376,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "match jsonVar $..@.fizz contains \u0027buzz\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $..@.fizz",
+                  "offset": 13
+                },
+                {},
+                {},
+                {
+                  "val": " \u0027buzz\u0027",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 300918,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "match jsonVar $..foo.@ contains { fizz: \u0027buzz\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $..foo.@",
+                  "offset": 13
+                },
+                {},
+                {},
+                {
+                  "val": " { fizz: \u0027buzz\u0027 }",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 54,
+        "name": "xml with namespaces",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;xml-with-namespaces",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69458648,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "def xmlVar \u003d \u003cns1:root xmlns:ns1\u003d\"http://foo.com\" xmlns:ns2\u003d\"http://bar.com\"\u003e\u003cns2:foo fizz\u003d\"buzz\" ping\u003d\"pong\"\u003ebar\u003c/ns2:foo\u003e\u003c/ns1:root\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "\u003cns1:root xmlns:ns1\u003d\"http://foo.com\" xmlns:ns2\u003d\"http://bar.com\"\u003e\u003cns2:foo fizz\u003d\"buzz\" ping\u003d\"pong\"\u003ebar\u003c/ns2:foo\u003e\u003c/ns1:root\u003e",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4862307,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "json jsonVar \u003d xmlVar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 5
+                },
+                {
+                  "val": "xmlVar",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.castToJson(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 476214,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "match jsonVar \u003d\u003d",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEqualsDocString(String,String,String,String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 58,
+              "value": "{ \n  \"ns1:root\": {\n    \"@\": { \"xmlns:ns1\": \"http://foo.com\", \"xmlns:ns2\": \"http://bar.com\" },\n    \"_\": { \n      \"ns2:foo\": { \n        \"_\": \"bar\", \n        \"@\": { \"fizz\": \"buzz\", \"ping\": \"pong\" } \n      } \n    }     \n  }\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 354698,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "match jsonVar $.ns1:root..ns2:foo.@ \u003d\u003d [{ fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $.ns1:root..ns2:foo.@",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 36
+                },
+                {
+                  "val": "[{ fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }]",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 276697,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "match jsonVar $..ns2:foo.@ \u003d\u003d [{ fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $..ns2:foo.@",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 27
+                },
+                {
+                  "val": "[{ fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }]",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 260686,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "match jsonVar $..ns2:foo.@ contains { fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $..ns2:foo.@",
+                  "offset": 13
+                },
+                {},
+                {},
+                {
+                  "val": " { fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 491813,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "match jsonVar $..ns2:foo.@ contains only { fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {
+                  "val": " $..ns2:foo.@",
+                  "offset": 13
+                },
+                {},
+                {
+                  "val": " only",
+                  "offset": 35
+                },
+                {
+                  "val": " { fizz: \u0027buzz\u0027, ping: \u0027pong\u0027 }",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 275465,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "match each jsonVar $..ns2:foo.@ contains { ping: \u0027pong\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "jsonVar",
+                  "offset": 11
+                },
+                {
+                  "val": " $..ns2:foo.@",
+                  "offset": 18
+                },
+                {},
+                {},
+                {
+                  "val": " { ping: \u0027pong\u0027 }",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "java pojo to json",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;java-pojo-to-json",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 43596136,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "def className \u003d \u0027com.intuit.karate.junit4.demos.SimplePojo\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "className",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027com.intuit.karate.junit4.demos.SimplePojo\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 76618686,
+              "error_message": "java.lang.RuntimeException: javascript evaluation failed: Java.type(className)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:383)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat ?.* def Pojo \u003d Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)\r\nCaused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)\r\n\tat javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:379)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\r\n\tat java.lang.Thread.run(Thread.java:745)\r\nCaused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo\r\n\tat java.net.URLClassLoader.findClass(URLClassLoader.java:381)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:424)\r\n\tat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:357)\r\n\tat java.lang.Class.forName0(Native Method)\r\n\tat java.lang.Class.forName(Class.java:348)\r\n\tat jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)\r\n\tat jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)\r\n\tat jdk.nashorn.internal.scripts.Script$1072$\\^eval\\_.:program(\u003ceval\u003e:1)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)\r\n\t... 31 more\r\n",
+              "status": "failed"
+            },
+            "line": 79,
+            "name": "def Pojo \u003d Java.type(className)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pojo",
+                  "offset": 4
+                },
+                {
+                  "val": "Java.type(className)",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "def pojo \u003d new Pojo()",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pojo",
+                  "offset": 4
+                },
+                {
+                  "val": "new Pojo()",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "json jsonVar \u003d pojo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonVar",
+                  "offset": 5
+                },
+                {
+                  "val": "pojo",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.castToJson(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "match jsonVar \u003d\u003d { foo: null, bar: 0 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 14
+                },
+                {
+                  "val": "{ foo: null, bar: 0 }",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "def testJson \u003d { foo: \u0027hello\u0027, bar: 5 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testJson",
+                  "offset": 4
+                },
+                {
+                  "val": "{ foo: \u0027hello\u0027, bar: 5 }",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "def testPojo \u003d karate.toBean(testJson, className)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testPojo",
+                  "offset": 4
+                },
+                {
+                  "val": "karate.toBean(testJson, className)",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "assert testPojo.foo \u003d\u003d \u0027hello\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testPojo.foo \u003d\u003d \u0027hello\u0027",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "assert testPojo.bar \u003d\u003d 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testPojo.bar \u003d\u003d 5",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 88,
+        "name": "java pojo to xml",
+        "description": "",
+        "id": "convert-between-json,-xml-and-string;java-pojo-to-xml",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 46385681,
+              "error_message": "java.lang.RuntimeException: javascript evaluation failed: Java.type(\u0027com.intuit.karate.junit4.demos.SimplePojo\u0027)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:383)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat ?.* def Pojo \u003d Java.type(\u0027com.intuit.karate.junit4.demos.SimplePojo\u0027)(com/intuit/karate/testng/demos/type-conv.feature:89)\r\nCaused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)\r\n\tat jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)\r\n\tat javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:379)\r\n\tat com.intuit.karate.Script.evalInNashorn(Script.java:358)\r\n\tat com.intuit.karate.Script.eval(Script.java:269)\r\n\tat com.intuit.karate.Script.eval(Script.java:182)\r\n\tat com.intuit.karate.Script.assign(Script.java:606)\r\n\tat com.intuit.karate.Script.assign(Script.java:537)\r\n\tat com.intuit.karate.StepDefs.def(StepDefs.java:268)\r\n\tat sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)\r\n\tat com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)\r\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\r\n\tat java.lang.Thread.run(Thread.java:745)\r\nCaused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo\r\n\tat java.net.URLClassLoader.findClass(URLClassLoader.java:381)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:424)\r\n\tat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:357)\r\n\tat java.lang.Class.forName0(Native Method)\r\n\tat java.lang.Class.forName(Class.java:348)\r\n\tat jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)\r\n\tat jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)\r\n\tat jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)\r\n\tat jdk.nashorn.internal.scripts.Script$1098$\\^eval\\_.:program(\u003ceval\u003e:1)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)\r\n\tat jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)\r\n\tat jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)\r\n\t... 31 more\r\n",
+              "status": "failed"
+            },
+            "line": 89,
+            "name": "def Pojo \u003d Java.type(\u0027com.intuit.karate.junit4.demos.SimplePojo\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pojo",
+                  "offset": 4
+                },
+                {
+                  "val": "Java.type(\u0027com.intuit.karate.junit4.demos.SimplePojo\u0027)",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "def pojo \u003d new Pojo()",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pojo",
+                  "offset": 4
+                },
+                {
+                  "val": "new Pojo()",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "xml xmlVar \u003d pojo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xmlVar",
+                  "offset": 4
+                },
+                {
+                  "val": "pojo",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.castToXml(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "match xmlVar \u003d\u003d \u003croot\u003e\u003cfoo\u003e\u003c/foo\u003e\u003cbar\u003e0\u003c/bar\u003e\u003c/root\u003e",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "xmlVar",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u003croot\u003e\u003cfoo\u003e\u003c/foo\u003e\u003cbar\u003e0\u003c/bar\u003e\u003c/root\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "convert between json, xml and string",
+    "description": "",
+    "id": "convert-between-json,-xml-and-string",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/type-conv.feature"
+  }
+]

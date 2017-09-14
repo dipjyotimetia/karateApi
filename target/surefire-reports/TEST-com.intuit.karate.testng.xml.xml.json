@@ -1,0 +1,686 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "placeholders using xml embedded expressions",
+        "description": "",
+        "id": "xml-samples-and-tests;placeholders-using-xml-embedded-expressions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40620211,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "def search \u003d { number: \u0027123456\u0027, wireless: true, voip: false, tollFree: false }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 4
+                },
+                {
+                  "val": "{ number: \u0027123456\u0027, wireless: true, voip: false, tollFree: false }",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 51132219,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def req \u003d read(\u0027soap1.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027soap1.xml\u0027)",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 1982445,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "def phone \u003d req/Envelope/Body/getAccountByPhoneNumber",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 4
+                },
+                {
+                  "val": "req/Envelope/Body/getAccountByPhoneNumber",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8383825,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "match phone /getAccountByPhoneNumber/phoneNumber \u003d\u003d \u0027123456\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "phone",
+                  "offset": 6
+                },
+                {
+                  "val": " /getAccountByPhoneNumber/phoneNumber",
+                  "offset": 11
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 49
+                },
+                {
+                  "val": "\u0027123456\u0027",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4264166,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "match phone \u003d\u003d",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "phone",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.matchEqualsDocString(String,String,String,String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 9,
+              "value": "\u003cacc:getAccountByPhoneNumber\u003e\n    \u003cacc:phoneNumber\u003e123456\u003c/acc:phoneNumber\u003e\n    \u003cacc:phoneNumberSearchOption\u003e\n        \u003cacc:searchWirelessInd\u003etrue\u003c/acc:searchWirelessInd\u003e\n        \u003cacc:searchVoipInd\u003efalse\u003c/acc:searchVoipInd\u003e\n        \u003cacc:searchTollFreeInd\u003efalse\u003c/acc:searchTollFreeInd\u003e\n    \u003c/acc:phoneNumberSearchOption\u003e\n\u003c/acc:getAccountByPhoneNumber\u003e"
+            }
+          },
+          {
+            "result": {
+              "duration": 6785225,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 19,
+                "value": "# string comparisons may be simpler than xpath in some cases"
+              }
+            ],
+            "line": 20,
+            "name": "xmlstring reqString \u003d req",
+            "match": {
+              "arguments": [
+                {
+                  "val": "reqString",
+                  "offset": 10
+                },
+                {
+                  "val": "req",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefs.castToXmlString(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4540862,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "match reqString contains \u0027\u003cacc:phoneNumber\u003e123456\u003c/acc:phoneNumber\u003e\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "reqString",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " \u0027\u003cacc:phoneNumber\u003e123456\u003c/acc:phoneNumber\u003e\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "placeholders using string replace",
+        "description": "",
+        "id": "xml-samples-and-tests;placeholders-using-string-replace",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 42852258,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "def req \u003d read(\u0027soap2.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027soap2.xml\u0027)",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 41375174,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "replace req",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefs.replace(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "token",
+                  "value"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "@@number@@",
+                  "\u0027123456\u0027"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "@@wireless@@",
+                  "\u0027true\u0027"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "@@voip@@",
+                  "\u0027false\u0027"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "@@tollFree@@",
+                  "\u0027false\u0027"
+                ],
+                "line": 30
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6924805,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 31,
+                "value": "# convert back to xml after a string replace"
+              }
+            ],
+            "line": 32,
+            "name": "xml req \u003d req",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 4
+                },
+                {
+                  "val": "req",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.castToXml(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5475227,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "match req /Envelope/Body/getAccountByPhoneNumber/phoneNumber \u003d\u003d \u0027123456\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "req",
+                  "offset": 6
+                },
+                {
+                  "val": " /Envelope/Body/getAccountByPhoneNumber/phoneNumber",
+                  "offset": 9
+                },
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 61
+                },
+                {
+                  "val": "\u0027123456\u0027",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "set xml chunks using xpath",
+        "description": "",
+        "id": "xml-samples-and-tests;set-xml-chunks-using-xpath",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30507648,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "def req \u003d read(\u0027envelope1.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027envelope1.xml\u0027)",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3732531,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "def phone \u003d \u0027123456\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027123456\u0027",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5366436,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "def search \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 40,
+              "value": "\u003cacc:getAccountByPhoneNumber\u003e\n    \u003cacc:phoneNumber\u003e#(phone)\u003c/acc:phoneNumber\u003e\n\u003c/acc:getAccountByPhoneNumber\u003e"
+            }
+          },
+          {
+            "result": {
+              "duration": 6364843,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "set req /Envelope/Body \u003d search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 4
+                },
+                {
+                  "val": " /Envelope/Body",
+                  "offset": 7
+                },
+                {
+                  "val": "search",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefs.setByPath(String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5846755,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "match req \u003d\u003d",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "req",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.matchEqualsDocString(String,String,String,String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 47,
+              "value": "\u003csoapenv:Envelope xmlns:soapenv\u003d\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:acc\u003d\"http://foo/bar\"\u003e\n    \u003csoapenv:Header /\u003e\n    \u003csoapenv:Body\u003e\n        \u003cacc:getAccountByPhoneNumber\u003e\n            \u003cacc:phoneNumber\u003e123456\u003c/acc:phoneNumber\u003e\n        \u003c/acc:getAccountByPhoneNumber\u003e\n    \u003c/soapenv:Body\u003e\n\u003c/soapenv:Envelope\u003e"
+            }
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "name": "set xml chunks using embedded expressions",
+        "description": "",
+        "id": "xml-samples-and-tests;set-xml-chunks-using-embedded-expressions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31685867,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "def phone \u003d \u0027123456\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "phone",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027123456\u0027",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4232145,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 60,
+                "value": "# this will remove the \u003cacc:phoneNumberSearchOption\u003e element"
+              }
+            ],
+            "line": 61,
+            "name": "def searchOption \u003d null",
+            "match": {
+              "arguments": [
+                {
+                  "val": "searchOption",
+                  "offset": 4
+                },
+                {
+                  "val": "null",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10181942,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "def search \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 63,
+              "value": "\u003cacc:getAccountByPhoneNumber\u003e\n    \u003cacc:phoneNumber\u003e#(phone)\u003c/acc:phoneNumber\u003e\n    \u003cacc:phoneNumberSearchOption\u003e##(searchOption)\u003c/acc:phoneNumberSearchOption\u003e        \n\u003c/acc:getAccountByPhoneNumber\u003e"
+            }
+          },
+          {
+            "result": {
+              "duration": 12395515,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "def req \u003d read(\u0027envelope2.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "req",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027envelope2.xml\u0027)",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2486575,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "match req \u003d\u003d",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "req",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.matchEqualsDocString(String,String,String,String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 71,
+              "value": "\u003csoapenv:Envelope xmlns:soapenv\u003d\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:acc\u003d\"http://foo/bar\"\u003e\n    \u003csoapenv:Header /\u003e\n    \u003csoapenv:Body\u003e\n        \u003cacc:getAccountByPhoneNumber\u003e\n            \u003cacc:phoneNumber\u003e123456\u003c/acc:phoneNumber\u003e\n        \u003c/acc:getAccountByPhoneNumber\u003e\n    \u003c/soapenv:Body\u003e\n\u003c/soapenv:Envelope\u003e"
+            }
+          }
+        ]
+      },
+      {
+        "line": 82,
+        "name": "pretty print xml",
+        "description": "",
+        "id": "xml-samples-and-tests;pretty-print-xml",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24960579,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "def search \u003d { number: \u0027123456\u0027, wireless: true, voip: false, tollFree: false }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search",
+                  "offset": 4
+                },
+                {
+                  "val": "{ number: \u0027123456\u0027, wireless: true, voip: false, tollFree: false }",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 27159783,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "def xml \u003d read(\u0027soap1.xml\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xml",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027soap1.xml\u0027)",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8584573,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "print \u0027pretty print:\\n\u0027 + karate.prettyXml(xml)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027pretty print:\\n\u0027 + karate.prettyXml(xml)",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "xml samples and tests",
+    "description": "",
+    "id": "xml-samples-and-tests",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/xml/xml.feature"
+  }
+]

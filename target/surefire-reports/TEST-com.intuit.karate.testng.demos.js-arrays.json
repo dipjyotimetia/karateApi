@@ -1,0 +1,1075 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "arrays returned from js can be used in match",
+        "description": "",
+        "id": "various-javascript-tests;arrays-returned-from-js-can-be-used-in-match",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 117807479,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "def fun \u003d function(){ return [\u0027foo\u0027, \u0027bar\u0027, \u0027baz\u0027] }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(){ return [\u0027foo\u0027, \u0027bar\u0027, \u0027baz\u0027] }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 187201,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def json \u003d [\u0027foo\u0027, \u0027bar\u0027, \u0027baz\u0027]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "[\u0027foo\u0027, \u0027bar\u0027, \u0027baz\u0027]",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 136790754,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "match json \u003d\u003d fun()",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "fun()",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 13425533,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "def expected \u003d fun()",
+            "match": {
+              "arguments": [
+                {
+                  "val": "expected",
+                  "offset": 4
+                },
+                {
+                  "val": "fun()",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7202732,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "match json \u003d\u003d expected",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "expected",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "json-path can be performed in js",
+        "description": "",
+        "id": "various-javascript-tests;json-path-can-be-performed-in-js",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75215087,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "def json \u003d [{foo: 1}, {foo: 2}]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "[{foo: 1}, {foo: 2}]",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7372281,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "def fun \u003d function(arg) { return karate.jsonPath(arg, \u0027$[*].foo\u0027) }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(arg) { return karate.jsonPath(arg, \u0027$[*].foo\u0027) }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 41827987,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "def res \u003d call fun json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "res",
+                  "offset": 4
+                },
+                {
+                  "val": "call fun json",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 371939,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "match res \u003d\u003d [1, 2]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "res",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "[1, 2]",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "table to json with expressions evaluated",
+        "description": "",
+        "id": "various-javascript-tests;table-to-json-with-expressions-evaluated",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 164003906,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "def one \u003d \u0027hello\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "one",
+                  "offset": 4
+                },
+                {
+                  "val": "\u0027hello\u0027",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 187612,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "def two \u003d { baz: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "two",
+                  "offset": 4
+                },
+                {
+                  "val": "{ baz: \u0027world\u0027 }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 113320806,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "table json \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.table(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "foo",
+                  "bar"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "one",
+                  "1"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "two.baz",
+                  "2"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 34568602,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "match json \u003d\u003d [{ foo: \u0027hello\u0027, bar: 1 }, { foo: \u0027world\u0027, bar: 2 }]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "[{ foo: \u0027hello\u0027, bar: 1 }, { foo: \u0027world\u0027, bar: 2 }]",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "json path with keys with spaces or other troublesome characters",
+        "description": "",
+        "id": "various-javascript-tests;json-path-with-keys-with-spaces-or-other-troublesome-characters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 64239592,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "def json \u003d { \u0027sp ace\u0027: \u0027foo\u0027, \u0027hy-phen\u0027: \u0027bar\u0027, \u0027full.stop\u0027: \u0027baz\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "{ \u0027sp ace\u0027: \u0027foo\u0027, \u0027hy-phen\u0027: \u0027bar\u0027, \u0027full.stop\u0027: \u0027baz\u0027 }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6181747,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "string jsonString \u003d json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jsonString",
+                  "offset": 7
+                },
+                {
+                  "val": "json",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefs.castToString(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 55858230,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "match jsonString \u003d\u003d \u0027{\"sp ace\":\"foo\",\"hy-phen\":\"bar\",\"full.stop\":\"baz\"}\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "jsonString",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 17
+                },
+                {
+                  "val": "\u0027{\"sp ace\":\"foo\",\"hy-phen\":\"bar\",\"full.stop\":\"baz\"}\u0027",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 156822,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 29,
+                "value": "# get comes to the rescue because spaces are a problem on the LHS"
+              }
+            ],
+            "line": 30,
+            "name": "def val1 \u003d get json $[\u0027sp ace\u0027]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "val1",
+                  "offset": 4
+                },
+                {
+                  "val": "get json $[\u0027sp ace\u0027]",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11968564,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "match val1 \u003d\u003d \u0027foo\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "val1",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "\u0027foo\u0027",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11833501,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "match json[\u0027hy-phen\u0027] \u003d\u003d \u0027bar\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json[\u0027hy-phen\u0027]",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 22
+                },
+                {
+                  "val": "\u0027bar\u0027",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5760955,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "match json[\u0027full.stop\u0027] \u003d\u003d \u0027baz\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json[\u0027full.stop\u0027]",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 24
+                },
+                {
+                  "val": "\u0027baz\u0027",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "pass json var (becomes a map) to a function",
+        "description": "",
+        "id": "various-javascript-tests;pass-json-var-(becomes-a-map)-to-a-function",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 63214911,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "def json \u003d { foo: \u0027bar\u0027, hello: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "{ foo: \u0027bar\u0027, hello: \u0027world\u0027 }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6217873,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "def fun \u003d function(o){ return o }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(o){ return o }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 60143332,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "def result \u003d call fun json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "result",
+                  "offset": 4
+                },
+                {
+                  "val": "call fun json",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7972474,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "match result \u003d\u003d json",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "result",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "json",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "remove json key from js",
+        "description": "",
+        "id": "various-javascript-tests;remove-json-key-from-js",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69324816,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "def json \u003d { foo: \u0027bar\u0027, hello: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "{ foo: \u0027bar\u0027, hello: \u0027world\u0027 }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 258742114,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "def fun \u003d function(){ karate.remove(\u0027json\u0027, \u0027$.foo\u0027) }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 4
+                },
+                {
+                  "val": "function(){ karate.remove(\u0027json\u0027, \u0027$.foo\u0027) }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 37641412,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "call fun",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fun",
+                  "offset": 5
+                },
+                {}
+              ],
+              "location": "StepDefs.callAndUpdateConfigAndVars(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 254118,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "match json \u003d\u003d { hello: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "{ hello: \u0027world\u0027 }",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "remove json value",
+        "description": "",
+        "id": "various-javascript-tests;remove-json-value",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54687401,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "def data \u003d { a: \u0027hello\u0027, b: null, c: null }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data",
+                  "offset": 4
+                },
+                {
+                  "val": "{ a: \u0027hello\u0027, b: null, c: null }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 26114987,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "def json \u003d { foo: \u0027#(data.a)\u0027, bar: \u0027#(data.b)\u0027, baz: \u0027##(data.c)\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "{ foo: \u0027#(data.a)\u0027, bar: \u0027#(data.b)\u0027, baz: \u0027##(data.c)\u0027 }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 289423,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "match json \u003d\u003d { foo: \u0027hello\u0027, bar: null }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "json",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "{ foo: \u0027hello\u0027, bar: null }",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 52,
+        "name": "optional json values",
+        "description": "",
+        "id": "various-javascript-tests;optional-json-values",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 42421612,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "def response \u003d [{a: \u0027one\u0027, b: \u0027two\u0027}, { a: \u0027one\u0027 }]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "response",
+                  "offset": 4
+                },
+                {
+                  "val": "[{a: \u0027one\u0027, b: \u0027two\u0027}, { a: \u0027one\u0027 }]",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10516934,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "match each response contains { a: \u0027one\u0027, b: \u0027##(\"two\")\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "response",
+                  "offset": 11
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { a: \u0027one\u0027, b: \u0027##(\"two\")\u0027 }",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "get and json path",
+        "description": "",
+        "id": "various-javascript-tests;get-and-json-path",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37205840,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "def foo \u003d { bar: { baz: \u0027ban\u0027 } }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo",
+                  "offset": 4
+                },
+                {
+                  "val": "{ bar: { baz: \u0027ban\u0027 } }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 223738,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "def res \u003d get foo $..bar[?(@.baz)]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "res",
+                  "offset": 4
+                },
+                {
+                  "val": "get foo $..bar[?(@.baz)]",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 208959,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "match res contains { baz: \u0027ban\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "res",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { baz: \u0027ban\u0027 }",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "name": "comparing 2 payloads",
+        "description": "",
+        "id": "various-javascript-tests;comparing-2-payloads",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80540881,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "def foo \u003d { hello: \u0027world\u0027, baz: \u0027ban\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo",
+                  "offset": 4
+                },
+                {
+                  "val": "{ hello: \u0027world\u0027, baz: \u0027ban\u0027 }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 173654,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "def bar \u003d { baz: \u0027ban\u0027, hello: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bar",
+                  "offset": 4
+                },
+                {
+                  "val": "{ baz: \u0027ban\u0027, hello: \u0027world\u0027 }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 39097558,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "match foo \u003d\u003d bar",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "bar",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "various javascript tests",
+    "description": "",
+    "id": "various-javascript-tests",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/js-arrays.feature"
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 202078017,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def temperature \u003d { celsius: 100, fahrenheit: 212 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "temperature",
+                  "offset": 4
+                },
+                {
+                  "val": "{ celsius: 100, fahrenheit: 212 }",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20914404,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "match temperature contains { fahrenheit: \u0027#? _ \u003d\u003d $.celsius * 1.8 + 32\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "temperature",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { fahrenheit: \u0027#? _ \u003d\u003d $.celsius * 1.8 + 32\u0027 }",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117262707,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 7,
+                "value": "# using embedded expressions"
+              }
+            ],
+            "line": 8,
+            "name": "match temperature \u003d\u003d { celsius: \u0027#number\u0027, fahrenheit: \u0027#($.celsius * 1.8 + 32)\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "temperature",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 18
+                },
+                {
+                  "val": "{ celsius: \u0027#number\u0027, fahrenheit: \u0027#($.celsius * 1.8 + 32)\u0027 }",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 317339,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "def json \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "Given ",
+            "doc_string": {
+              "content_type": "",
+              "line": 11,
+              "value": "{\n  \"hotels\": [\n    { \"roomInformation\": [{ \"roomPrice\": 618.4 }], \"totalPrice\": 618.4  },\n    { \"roomInformation\": [{ \"roomPrice\": 679.79}], \"totalPrice\": 679.79 }\n  ]\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 26089123,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "match each json.hotels contains { totalPrice: \u0027#? _ \u003d\u003d $.roomInformation[0].roomPrice\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "json.hotels",
+                  "offset": 11
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { totalPrice: \u0027#? _ \u003d\u003d $.roomInformation[0].roomPrice\u0027 }",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 126165852,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 20,
+                "value": "# using embedded expressions"
+              }
+            ],
+            "line": 21,
+            "name": "match each json.hotels \u003d\u003d { roomInformation: \u0027#array\u0027, totalPrice: \u0027#($.roomInformation[0].roomPrice)\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "json.hotels",
+                  "offset": 11
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 23
+                },
+                {
+                  "val": "{ roomInformation: \u0027#array\u0027, totalPrice: \u0027#($.roomInformation[0].roomPrice)\u0027 }",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/each-predicate-dollar.feature"
+  }
+]

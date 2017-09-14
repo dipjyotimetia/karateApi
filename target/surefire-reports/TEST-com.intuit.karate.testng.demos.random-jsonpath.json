@@ -1,0 +1,230 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 131545425,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def data \u003d read(\u0027data.json\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027data.json\u0027)",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 113152900,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 6,
+                "value": "# wrapping in parantheses forces evaluation as a JS expression"
+              }
+            ],
+            "line": 7,
+            "name": "def size1 \u003d (data.Contents.Contents.length)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "size1",
+                  "offset": 4
+                },
+                {
+                  "val": "(data.Contents.Contents.length)",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 426540,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 8,
+                "value": "# the \u0027get\u0027 keyword forces pure json path"
+              }
+            ],
+            "line": 9,
+            "name": "def size2 \u003d get data.Contents.Contents.length()",
+            "match": {
+              "arguments": [
+                {
+                  "val": "size2",
+                  "offset": 4
+                },
+                {
+                  "val": "get data.Contents.Contents.length()",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8036928,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "assert size1 \u003d\u003d size2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "size1 \u003d\u003d size2",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.asssertBoolean(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10389260,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "def index \u003d Math.floor(Math.random() * size1)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "index",
+                  "offset": 4
+                },
+                {
+                  "val": "Math.floor(Math.random() * size1)",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 26548916,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "print \u0027selected index: \u0027 + index",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027selected index: \u0027 + index",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 14375086,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "def item \u003d (data.Contents.Contents[index])",
+            "match": {
+              "arguments": [
+                {
+                  "val": "item",
+                  "offset": 4
+                },
+                {
+                  "val": "(data.Contents.Contents[index])",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 343613,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "def children_uuids \u003d item.children_uuids",
+            "match": {
+              "arguments": [
+                {
+                  "val": "children_uuids",
+                  "offset": 4
+                },
+                {
+                  "val": "item.children_uuids",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 512751,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "match children_uuids \u003d\u003d { item: [\u0027item1_uuid\u0027, \u0027item2_uuid\u0027] }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "children_uuids",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 21
+                },
+                {
+                  "val": "{ item: [\u0027item1_uuid\u0027, \u0027item2_uuid\u0027] }",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/random-jsonpath.feature"
+  }
+]

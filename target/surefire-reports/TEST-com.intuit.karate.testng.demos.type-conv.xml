@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="convert between json, xml and string" skipped="0" tests="11" time="1.399665">
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="string to json" time="0.09898">
+<system-out><![CDATA[* def strVar = '{ "foo": "bar" }'...........................................passed
+* json jsonVar = strVar.....................................................passed
+* match jsonVar == { foo: 'bar' }...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="json to string" time="0.112372">
+<system-out><![CDATA[* def jsonVar = { foo: 'bar' }..............................................passed
+* string strVar = jsonVar...................................................passed
+* assert strVar == '{"foo":"bar"}'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="string to xml" time="0.220562">
+<system-out><![CDATA[* def strVar = '<root><foo>bar</foo></root>'................................passed
+* xml xmlVar = strVar.......................................................passed
+* match xmlVar == <root><foo>bar</foo></root>...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="xml to string (incorrect)" time="0.086194">
+<system-out><![CDATA[* def xmlVar = <root><foo>bar</foo></root>..................................passed
+* string strVar = xmlVar....................................................passed
+* match strVar == '{"root":{"foo":"bar"}}'..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="xml to string" time="0.11245">
+<system-out><![CDATA[* def xmlVar = <root><foo>bar</foo></root>..................................passed
+* xmlstring strVar = xmlVar.................................................passed
+* match strVar == '<root><foo>bar</foo></root>'.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="xml to json" time="0.294688">
+<system-out><![CDATA[* def xmlVar = <root><foo>bar</foo></root>..................................passed
+* json jsonVar = xmlVar.....................................................passed
+* match jsonVar == { root: { foo: 'bar' } }.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="json to xml" time="0.128987">
+<system-out><![CDATA[* def jsonVar = { root: { foo: 'bar' } }....................................passed
+* xml xmlVar = jsonVar......................................................passed
+* match xmlVar == <root><foo>bar</foo></root>...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="xml with attributes" time="0.102374">
+<system-out><![CDATA[* def xmlVar = <root><foo fizz="buzz">bar</foo></root>......................passed
+* json jsonVar = xmlVar.....................................................passed
+* match jsonVar == { root: { foo: { _ : 'bar', @: { fizz: 'buzz' }}}}.......passed
+* match jsonVar $.root.foo._ == 'bar'.......................................passed
+* match jsonVar $.root.foo.@ == { fizz: 'buzz' }............................passed
+* match jsonVar $.root.foo.@.fizz == 'buzz'.................................passed
+* match jsonVar $..foo.@.fizz == ['buzz']...................................passed
+* match jsonVar $..@.fizz contains 'buzz'...................................passed
+* match jsonVar $..foo.@ contains { fizz: 'buzz' }..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="xml with namespaces" time="0.076457">
+<system-out><![CDATA[* def xmlVar = <ns1:root xmlns:ns1="http://foo.com" xmlns:ns2="http://bar.com"><ns2:foo fizz="buzz" ping="pong">bar</ns2:foo></ns1:root>.passed
+* json jsonVar = xmlVar.....................................................passed
+* match jsonVar ==..........................................................passed
+* match jsonVar $.ns1:root..ns2:foo.@ == [{ fizz: 'buzz', ping: 'pong' }]...passed
+* match jsonVar $..ns2:foo.@ == [{ fizz: 'buzz', ping: 'pong' }]............passed
+* match jsonVar $..ns2:foo.@ contains { fizz: 'buzz', ping: 'pong' }........passed
+* match jsonVar $..ns2:foo.@ contains only { fizz: 'buzz', ping: 'pong' }...passed
+* match each jsonVar $..ns2:foo.@ contains { ping: 'pong' }.................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="java pojo to json" time="0.120215">
+<failure message="java.lang.RuntimeException: javascript evaluation failed: Java.type(className)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:383)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:358)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:269)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:182)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:606)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:537)&#13;&#10;&#9;at com.intuit.karate.StepDefs.def(StepDefs.java:268)&#13;&#10;&#9;at ✽.* def Pojo = Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)&#13;&#10;Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)&#13;&#10;&#9;at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:379)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:358)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:269)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:182)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:606)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:537)&#13;&#10;&#9;at com.intuit.karate.StepDefs.def(StepDefs.java:268)&#13;&#10;&#9;at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)&#13;&#10;&#9;at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)&#13;&#10;&#9;at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)&#13;&#10;&#9;at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#13;&#10;&#9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#13;&#10;&#9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#13;&#10;&#9;at java.lang.Thread.run(Thread.java:745)&#13;&#10;Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo&#13;&#10;&#9;at java.net.URLClassLoader.findClass(URLClassLoader.java:381)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(ClassLoader.java:424)&#13;&#10;&#9;at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(ClassLoader.java:357)&#13;&#10;&#9;at java.lang.Class.forName0(Native Method)&#13;&#10;&#9;at java.lang.Class.forName(Class.java:348)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)&#13;&#10;&#9;at jdk.nashorn.internal.scripts.Script$1072$\^eval\_.:program(&lt;eval&gt;:1)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)&#13;&#10;&#9;... 31 more&#13;&#10;"><![CDATA[* def className = 'com.intuit.karate.junit4.demos.SimplePojo'...............passed
+* def Pojo = Java.type(className)...........................................failed
+* def pojo = new Pojo().....................................................skipped
+* json jsonVar = pojo.......................................................skipped
+* match jsonVar == { foo: null, bar: 0 }....................................skipped
+* def testJson = { foo: 'hello', bar: 5 }...................................skipped
+* def testPojo = karate.toBean(testJson, className).........................skipped
+* assert testPojo.foo == 'hello'............................................skipped
+* assert testPojo.bar == 5..................................................skipped
+
+StackTrace:
+java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ✽.* def Pojo = Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$1072$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 31 more
+]]></failure>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.type-conv" name="java pojo to xml" time="0.046386">
+<failure message="java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.SimplePojo')&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:383)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:358)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:269)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:182)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:606)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:537)&#13;&#10;&#9;at com.intuit.karate.StepDefs.def(StepDefs.java:268)&#13;&#10;&#9;at ✽.* def Pojo = Java.type('com.intuit.karate.junit4.demos.SimplePojo')(com/intuit/karate/testng/demos/type-conv.feature:89)&#13;&#10;Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)&#13;&#10;&#9;at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)&#13;&#10;&#9;at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:379)&#13;&#10;&#9;at com.intuit.karate.Script.evalInNashorn(Script.java:358)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:269)&#13;&#10;&#9;at com.intuit.karate.Script.eval(Script.java:182)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:606)&#13;&#10;&#9;at com.intuit.karate.Script.assign(Script.java:537)&#13;&#10;&#9;at com.intuit.karate.StepDefs.def(StepDefs.java:268)&#13;&#10;&#9;at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;&#10;&#9;at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)&#13;&#10;&#9;at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)&#13;&#10;&#9;at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)&#13;&#10;&#9;at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#13;&#10;&#9;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#13;&#10;&#9;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#13;&#10;&#9;at java.lang.Thread.run(Thread.java:745)&#13;&#10;Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo&#13;&#10;&#9;at java.net.URLClassLoader.findClass(URLClassLoader.java:381)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(ClassLoader.java:424)&#13;&#10;&#9;at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(ClassLoader.java:357)&#13;&#10;&#9;at java.lang.Class.forName0(Native Method)&#13;&#10;&#9;at java.lang.Class.forName(Class.java:348)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)&#13;&#10;&#9;at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)&#13;&#10;&#9;at jdk.nashorn.internal.scripts.Script$1098$\^eval\_.:program(&lt;eval&gt;:1)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)&#13;&#10;&#9;at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)&#13;&#10;&#9;... 31 more&#13;&#10;"><![CDATA[* def Pojo = Java.type('com.intuit.karate.junit4.demos.SimplePojo').........failed
+* def pojo = new Pojo().....................................................skipped
+* xml xmlVar = pojo.........................................................skipped
+* match xmlVar == <root><foo></foo><bar>0</bar></root>......................skipped
+
+StackTrace:
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.SimplePojo')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ✽.* def Pojo = Java.type('com.intuit.karate.junit4.demos.SimplePojo')(com/intuit/karate/testng/demos/type-conv.feature:89)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$1098$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 31 more
+]]></failure>
+</testcase>
+</testsuite>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="various javascript tests" skipped="0" tests="10" time="1.663274">
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="arrays returned from js can be used in match" time="0.275414">
+<system-out><![CDATA[* def fun = function(){ return ['foo', 'bar', 'baz'] }......................passed
+* def json = ['foo', 'bar', 'baz']..........................................passed
+* match json == fun().......................................................passed
+* def expected = fun()......................................................passed
+* match json == expected....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="json-path can be performed in js" time="0.124787">
+<system-out><![CDATA[* def json = [{foo: 1}, {foo: 2}]...........................................passed
+* def fun = function(arg) { return karate.jsonPath(arg, '$[*].foo') }.......passed
+* def res = call fun json...................................................passed
+* match res == [1, 2].......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="table to json with expressions evaluated" time="0.312081">
+<system-out><![CDATA[* def one = 'hello'.........................................................passed
+* def two = { baz: 'world' }................................................passed
+* table json =..............................................................passed
+* match json == [{ foo: 'hello', bar: 1 }, { foo: 'world', bar: 2 }]........passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="json path with keys with spaces or other troublesome characters" time="0.155999">
+<system-out><![CDATA[* def json = { 'sp ace': 'foo', 'hy-phen': 'bar', 'full.stop': 'baz' }......passed
+* string jsonString = json..................................................passed
+* match jsonString == '{"sp ace":"foo","hy-phen":"bar","full.stop":"baz"}'..passed
+* def val1 = get json $['sp ace']...........................................passed
+* match val1 == 'foo'.......................................................passed
+* match json['hy-phen'] == 'bar'............................................passed
+* match json['full.stop'] == 'baz'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="pass json var (becomes a map) to a function" time="0.137549">
+<system-out><![CDATA[* def json = { foo: 'bar', hello: 'world' }.................................passed
+* def fun = function(o){ return o }.........................................passed
+* def result = call fun json................................................passed
+* match result == json......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="remove json key from js" time="0.365962">
+<system-out><![CDATA[* def json = { foo: 'bar', hello: 'world' }.................................passed
+* def fun = function(){ karate.remove('json', '$.foo') }....................passed
+* call fun..................................................................passed
+* match json == { hello: 'world' }..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="remove json value" time="0.081092">
+<system-out><![CDATA[* def data = { a: 'hello', b: null, c: null }...............................passed
+* def json = { foo: '#(data.a)', bar: '#(data.b)', baz: '##(data.c)' }......passed
+* match json == { foo: 'hello', bar: null }.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="optional json values" time="0.052939">
+<system-out><![CDATA[* def response = [{a: 'one', b: 'two'}, { a: 'one' }].......................passed
+* match each response contains { a: 'one', b: '##("two")' }.................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="get and json path" time="0.037639">
+<system-out><![CDATA[* def foo = { bar: { baz: 'ban' } }.........................................passed
+* def res = get foo $..bar[?(@.baz)]........................................passed
+* match res contains { baz: 'ban' }.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.js-arrays" name="comparing 2 payloads" time="0.119812">
+<system-out><![CDATA[* def foo = { hello: 'world', baz: 'ban' }..................................passed
+* def bar = { baz: 'ban', hello: 'world' }..................................passed
+* match foo == bar..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

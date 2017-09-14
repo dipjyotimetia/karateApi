@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="second" skipped="0" tests="1" time="0.348627">
-<testcase classname="com.intuit.karate.testng.cukeoptions.second" name="run second feature file" time="0.348627">
+<testsuite failures="0" name="second" skipped="0" tests="1" time="0.224211">
+<testcase classname="com.intuit.karate.testng.cukeoptions.second" name="run second feature file" time="0.224211">
 <system-out><![CDATA[Then assert 2 == 2..........................................................passed
 ]]></system-out>
 </testcase>

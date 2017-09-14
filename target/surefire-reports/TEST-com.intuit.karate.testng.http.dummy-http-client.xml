@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="swapping an http client on the fly" skipped="0" tests="1" time="0.113276">
+<testcase classname="com.intuit.karate.testng.http.dummy-http-client" name="configure http client class" time="0.113276">
+<failure message="java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting&#13;&#10;&#9;at com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)&#13;&#10;&#9;at com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)&#13;&#10;&#9;at com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)&#13;&#10;&#9;at com.intuit.karate.StepDefs.configure(StepDefs.java:102)&#13;&#10;&#9;at ✽.* configure httpClientClass = 'com.intuit.karate.junit4.http.DummyHttpClient'(com/intuit/karate/testng/http/dummy-http-client.feature:4)&#13;&#10;"><![CDATA[* configure httpClientClass = 'com.intuit.karate.junit4.http.DummyHttpClient'.failed
+* configure userDefined = { name: 'Smith' }.................................skipped
+Given url 'http://foo.bar'..................................................skipped
+When method get.............................................................skipped
+Then match response == 'hello Smith'........................................skipped
+
+StackTrace:
+java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)
+	at com.intuit.karate.StepDefs.configure(StepDefs.java:102)
+	at ✽.* configure httpClientClass = 'com.intuit.karate.junit4.http.DummyHttpClient'(com/intuit/karate/testng/http/dummy-http-client.feature:4)
+]]></failure>
+</testcase>
+</testsuite>

@@ -103,3 +103,2571 @@
 01:44:08.057 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@3aacf9cc
 01:44:08.123 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@401f9d62
 01:44:08.197 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 3 on thread pool-1-thread-3: com/intuit/karate/testng/smoke/smoke.feature
+15:43:20.472 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+15:43:21.383 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+15:43:24.857 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+15:43:25.078 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/call-once.feature
+15:43:25.642 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:43:26.122 [main] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:43:26.494 [main] WARN  com.intuit.karate - embedded json script eval failed at path $.totalPrice: javascript evaluation failed: ($.roomInformation[0].roomPrice)
+15:43:26.556 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/examples.feature
+15:43:26.967 [main] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:43:27.016 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/js-arrays.feature
+15:43:28.788 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/random-jsonpath.feature
+15:43:28.960 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\data.json - data.json: java.io.FileInputStream@c808207
+15:43:29.028 [main] INFO  com.intuit.karate - [print] selected index: 1
+15:43:29.071 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:43:29.139 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\../syntax/for-demos.js - ../syntax/for-demos.js: java.io.FileInputStream@68217d41
+15:43:29.169 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/replace.feature
+15:43:29.704 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:43:29.853 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/schema-like.feature
+15:43:29.932 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@7d0d91a1
+15:43:29.948 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\time-validator.js - time-validator.js: java.io.FileInputStream@2cde651b
+15:43:30.494 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@6ff0b1cc
+15:43:30.501 [main] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+
+15:43:30.536 [main] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+
+15:43:30.539 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/type-conv.feature
+15:43:32.078 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/users.feature
+15:43:33.426 [main] DEBUG com.intuit.karate - 
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:43:37.783 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 39e10762ce4784e4-HKG
+1 < Cache-Control: public, max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:43:28 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expires: Thu, 14 Sep 2017 09:43:28 GMT
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=d3bf17adae8e74bfd2dc807a8261147f41505367808; expires=Fri, 14-Sep-18 05:43:28 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:43:37.790 [main] DEBUG com.intuit.karate - response time in milliseconds: 5575
+15:43:37.859 [main] DEBUG com.intuit.karate - 
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d3bf17adae8e74bfd2dc807a8261147f41505367808
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:43:40.727 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: REVALIDATED
+2 < CF-RAY: 39e1076baeb73319-HKG
+2 < Cache-Control: public, max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Thu, 14 Sep 2017 05:43:30 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expires: Thu, 14 Sep 2017 09:43:30 GMT
+2 < Pragma: no-cache
+2 < Server: cloudflare-nginx
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:43:40.727 [main] DEBUG com.intuit.karate - response time in milliseconds: 2871
+15:43:40.920 [main] DEBUG com.intuit.karate - 
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:43:43.690 [main] DEBUG com.intuit.karate - 
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < CF-RAY: 39e1077edffa8466-HKG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:43:33 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=db600190efcd26d7cbad5f6ecc270808f1505367812; expires=Fri, 14-Sep-18 05:43:32 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:43:43.690 [main] DEBUG com.intuit.karate - response time in milliseconds: 2781
+15:43:43.702 [main] INFO  com.intuit.karate - [print] created id is: 11
+15:43:43.721 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:43:44.651 [main] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"John","lastName":"Smith"},"age":"20"}}
+15:43:44.884 [main] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"Jane","lastName":"Doe"}}}
+15:43:45.006 [main] INFO  com.intuit.karate - [print] {"query":{"name":{"lastName":"Waldo"}}}
+15:43:45.100 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/files/working-dir.feature
+15:43:45.194 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/http/dummy-http-client.feature
+15:43:45.315 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+15:43:45.578 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@4a833595
+15:43:45.639 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@1de73d37
+15:43:45.691 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/xml/xml.feature
+15:43:45.814 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@2c3f43d1
+15:43:46.048 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap2.xml - soap2.xml: java.io.FileInputStream@6cc8c13c
+15:43:46.210 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope1.xml - envelope1.xml: java.io.FileInputStream@315cf170
+15:43:46.528 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope2.xml - envelope2.xml: java.io.FileInputStream@661db63e
+15:43:46.664 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@6de33fde
+15:43:46.775 [main] INFO  com.intuit.karate - [print] pretty print:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://foo/bar">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <acc:getAccountByPhoneNumber>
+      <acc:phoneNumber>123456</acc:phoneNumber>
+      <acc:phoneNumberSearchOption>
+        <acc:searchWirelessInd>true</acc:searchWirelessInd>
+        <acc:searchVoipInd>false</acc:searchVoipInd>
+        <acc:searchTollFreeInd>false</acc:searchTollFreeInd>
+      </acc:phoneNumberSearchOption>
+    </acc:getAccountByPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+15:43:46.796 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+15:43:47.121 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+15:43:47.123 [pool-1-thread-5] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.examples.xml
+15:43:47.124 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.call-once.xml
+15:43:47.126 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.each-predicate-dollar.xml
+15:43:47.126 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+15:43:47.150 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 4 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:43:47.153 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:43:47.153 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 5 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/examples.feature
+15:43:47.154 [pool-1-thread-5] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/examples.feature
+15:43:47.176 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/call-once.feature
+15:43:47.177 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/call-once.feature
+15:43:47.178 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+15:43:47.179 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+15:43:47.190 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+15:43:47.192 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+15:43:47.415 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+15:43:47.423 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+15:43:47.663 [pool-1-thread-3] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.call-once
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def helper = Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')(com/intuit/karate/testng/demos/call-once.feature:4)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$645$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 33 common frames omitted
+15:43:47.687 [pool-1-thread-4] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:43:47.688 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.js-arrays.xml
+15:43:47.691 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.random-jsonpath.xml
+15:43:47.741 [pool-1-thread-3] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.call-once
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def helper = Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')(com/intuit/karate/testng/demos/call-once.feature:4)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$664$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 33 common frames omitted
+15:43:47.742 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 6 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/demos/js-arrays.feature
+15:43:47.743 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/js-arrays.feature
+15:43:47.745 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/call-once.feature
+15:43:47.771 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 7 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/random-jsonpath.feature
+15:43:47.772 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/random-jsonpath.feature
+15:43:47.812 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.read-from-relative-path.xml
+15:43:47.853 [pool-1-thread-4] WARN  com.intuit.karate - embedded json script eval failed at path $.totalPrice: javascript evaluation failed: ($.roomInformation[0].roomPrice)
+15:43:47.856 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 8 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:43:47.857 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:43:47.875 [pool-1-thread-5] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:43:47.892 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 5 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/examples.feature
+15:43:47.897 [pool-1-thread-5] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.replace.xml
+15:43:47.910 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 9 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/replace.feature
+15:43:47.911 [pool-1-thread-5] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/replace.feature
+15:43:47.942 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\data.json - data.json: java.io.FileInputStream@619a08f
+15:43:47.882 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 4 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:43:47.961 [pool-1-thread-3] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\../syntax/for-demos.js - ../syntax/for-demos.js: java.io.FileInputStream@10cfe583
+15:43:47.984 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 8 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:43:47.989 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.scenario-variable-scope.xml
+15:43:47.996 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 10 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:43:47.997 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:43:48.058 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.schema-like.xml
+15:43:48.106 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 11 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/schema-like.feature
+15:43:48.107 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/schema-like.feature
+15:43:48.121 [pool-1-thread-1] INFO  com.intuit.karate - [print] selected index: 0
+15:43:48.147 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 7 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/random-jsonpath.feature
+15:43:48.153 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.type-conv.xml
+15:43:48.174 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 12 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/type-conv.feature
+15:43:48.179 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/type-conv.feature
+15:43:48.250 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@67ec0ed3
+15:43:48.369 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\time-validator.js - time-validator.js: java.io.FileInputStream@2496c2ed
+15:43:48.437 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 10 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:43:48.442 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.users.xml
+15:43:48.703 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 13 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/users.feature
+15:43:48.707 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/users.feature
+15:43:48.910 [pool-1-thread-3] DEBUG com.intuit.karate - 
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:43:49.120 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 9 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/replace.feature
+15:43:49.138 [pool-1-thread-5] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.xml-and-xpath.xml
+15:43:49.144 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 14 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:43:49.144 [pool-1-thread-5] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:43:49.356 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@623bff62
+15:43:49.397 [pool-1-thread-4] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+
+15:43:49.435 [pool-1-thread-4] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+
+15:43:49.436 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 11 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/schema-like.feature
+15:43:49.478 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.files.working-dir.xml
+15:43:49.511 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 6 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/demos/js-arrays.feature
+15:43:49.523 [pool-1-thread-1] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.type-conv
+java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def Pojo = Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$1067$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 31 common frames omitted
+15:43:49.548 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.http.dummy-http-client.xml
+15:43:49.577 [pool-1-thread-1] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.type-conv
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.SimplePojo')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def Pojo = Java.type('com.intuit.karate.junit4.demos.SimplePojo')(com/intuit/karate/testng/demos/type-conv.feature:89)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$1077$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 31 common frames omitted
+15:43:49.581 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 12 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/type-conv.feature
+15:43:49.611 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+15:43:49.615 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 15 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/files/working-dir.feature
+15:43:49.616 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/files/working-dir.feature
+15:43:49.645 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 17 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/smoke/smoke.feature
+15:43:49.647 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+15:43:49.680 [pool-1-thread-4] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.files.working-dir
+java.lang.RuntimeException: javascript evaluation failed: read('classpath:file-utils.js')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def text = call read('classpath:file-utils.js') 'relative.txt'(com/intuit/karate/testng/files/working-dir.feature:5)
+Caused by: com.intuit.karate.exception.KarateFileNotFoundException: file not found: file-utils.js, classpath: true
+	at com.intuit.karate.FileUtils.readFileAsString(FileUtils.java:89)
+	at com.intuit.karate.FileUtils.readFile(FileUtils.java:65)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$1092$15A$\^eval\_.L:1(<eval>:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:639)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:117)
+	at jdk.nashorn.internal.scripts.Script$1100$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+15:43:49.682 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 15 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/files/working-dir.feature
+15:43:49.687 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.xml.xml.xml
+15:43:49.700 [pool-1-thread-5] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"John","lastName":"Smith"},"age":"20"}}
+15:43:49.709 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 18 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/xml/xml.feature
+15:43:49.710 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/xml/xml.feature
+15:43:49.773 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@6ed6121
+15:43:49.805 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@431e55f1
+15:43:49.811 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@61aa7a32
+15:43:49.839 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 17 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/smoke/smoke.feature
+15:43:49.857 [pool-1-thread-5] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"Jane","lastName":"Doe"}}}
+15:43:49.874 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 16 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/http/dummy-http-client.feature
+15:43:49.874 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/http/dummy-http-client.feature
+15:43:49.883 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap2.xml - soap2.xml: java.io.FileInputStream@112e5582
+15:43:49.917 [pool-1-thread-2] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.http.dummy-http-client
+java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)
+	at com.intuit.karate.StepDefs.configure(StepDefs.java:102)
+	at ?.* configure httpClientClass = 'com.intuit.karate.junit4.http.DummyHttpClient'(com/intuit/karate/testng/http/dummy-http-client.feature:4)
+15:43:49.971 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 16 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/http/dummy-http-client.feature
+15:43:49.994 [pool-1-thread-5] INFO  com.intuit.karate - [print] {"query":{"name":{"lastName":"Waldo"}}}
+15:43:49.999 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope1.xml - envelope1.xml: java.io.FileInputStream@277ef4ec
+15:43:50.050 [pool-1-thread-3] DEBUG com.intuit.karate - 
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 39e107b0abbb32d1-HKG
+1 < Cache-Control: public, max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:43:40 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expires: Thu, 14 Sep 2017 09:43:40 GMT
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=dabb71ea0bdb8ad737afe175cc9dd6b551505367820; expires=Fri, 14-Sep-18 05:43:40 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:43:50.051 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1146
+15:43:50.061 [pool-1-thread-3] DEBUG com.intuit.karate - 
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=dabb71ea0bdb8ad737afe175cc9dd6b551505367820
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:43:50.062 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 14 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:43:50.086 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope2.xml - envelope2.xml: java.io.FileInputStream@1e8a7a02
+15:43:50.119 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@143d676a
+15:43:50.143 [pool-1-thread-4] INFO  com.intuit.karate - [print] pretty print:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://foo/bar">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <acc:getAccountByPhoneNumber>
+      <acc:phoneNumber>123456</acc:phoneNumber>
+      <acc:phoneNumberSearchOption>
+        <acc:searchWirelessInd>true</acc:searchWirelessInd>
+        <acc:searchVoipInd>false</acc:searchVoipInd>
+        <acc:searchTollFreeInd>false</acc:searchTollFreeInd>
+      </acc:phoneNumberSearchOption>
+    </acc:getAccountByPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+15:43:50.144 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 18 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/xml/xml.feature
+15:43:51.310 [pool-1-thread-3] DEBUG com.intuit.karate - 
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 39e107b81e513319-HKG
+2 < Cache-Control: public, max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Thu, 14 Sep 2017 05:43:42 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expires: Thu, 14 Sep 2017 09:43:42 GMT
+2 < Pragma: no-cache
+2 < Server: cloudflare-nginx
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:43:51.310 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1250
+15:43:51.374 [pool-1-thread-3] DEBUG com.intuit.karate - 
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:43:53.105 [pool-1-thread-3] DEBUG com.intuit.karate - 
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < CF-RAY: 39e107c05b09337f-HKG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:43:43 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=d51809107176ee57a281d189535836aec1505367823; expires=Fri, 14-Sep-18 05:43:43 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:43:53.106 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1734
+15:43:53.117 [pool-1-thread-3] INFO  com.intuit.karate - [print] created id is: 11
+15:43:53.124 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 13 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/users.feature
+15:56:20.857 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+15:56:21.412 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+15:56:23.530 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+15:56:23.714 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/call-once.feature
+15:56:24.060 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:56:24.374 [main] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:56:24.714 [main] WARN  com.intuit.karate - embedded json script eval failed at path $.totalPrice: javascript evaluation failed: ($.roomInformation[0].roomPrice)
+15:56:24.774 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/examples.feature
+15:56:25.039 [main] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:56:25.125 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/js-arrays.feature
+15:56:26.781 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/random-jsonpath.feature
+15:56:26.900 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\data.json - data.json: java.io.FileInputStream@c808207
+15:56:27.035 [main] INFO  com.intuit.karate - [print] selected index: 0
+15:56:27.077 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:56:27.161 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\../syntax/for-demos.js - ../syntax/for-demos.js: java.io.FileInputStream@3e5d4f6b
+15:56:27.189 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/replace.feature
+15:56:27.816 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:56:28.013 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/schema-like.feature
+15:56:28.084 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@201c3cda
+15:56:28.107 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\time-validator.js - time-validator.js: java.io.FileInputStream@3bb87d36
+15:56:28.675 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@f3560d4
+15:56:28.683 [main] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+
+15:56:28.728 [main] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+
+15:56:28.732 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/type-conv.feature
+15:56:29.513 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/users.feature
+15:56:29.987 [main] DEBUG com.intuit.karate - 
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:56:32.816 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 39e11a4fab021968-HKG
+1 < Cache-Control: public, max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:56:23 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expires: Thu, 14 Sep 2017 09:56:23 GMT
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=d250ac75f03ef32c8558daa7be7fc878e1505368583; expires=Fri, 14-Sep-18 05:56:23 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:56:32.822 [main] DEBUG com.intuit.karate - response time in milliseconds: 3220
+15:56:32.888 [main] DEBUG com.intuit.karate - 
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d250ac75f03ef32c8558daa7be7fc878e1505368583
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:56:33.868 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 39e11a569f9232d1-HKG
+2 < Cache-Control: public, max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Thu, 14 Sep 2017 05:56:24 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expires: Thu, 14 Sep 2017 09:56:24 GMT
+2 < Pragma: no-cache
+2 < Server: cloudflare-nginx
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:56:33.869 [main] DEBUG com.intuit.karate - response time in milliseconds: 983
+15:56:33.972 [main] DEBUG com.intuit.karate - 
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:56:35.426 [main] DEBUG com.intuit.karate - 
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < CF-RAY: 39e11a5d5cf48466-HKG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:56:26 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=d3ac47cdb8d79fd20b7504857912c1bc91505368585; expires=Fri, 14-Sep-18 05:56:25 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:56:35.426 [main] DEBUG com.intuit.karate - response time in milliseconds: 1458
+15:56:35.438 [main] INFO  com.intuit.karate - [print] created id is: 11
+15:56:35.460 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:56:36.168 [main] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"John","lastName":"Smith"},"age":"20"}}
+15:56:36.298 [main] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"Jane","lastName":"Doe"}}}
+15:56:36.437 [main] INFO  com.intuit.karate - [print] {"query":{"name":{"lastName":"Waldo"}}}
+15:56:36.529 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/files/working-dir.feature
+15:56:36.609 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/http/dummy-http-client.feature
+15:56:36.714 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+15:56:36.900 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@49122853
+15:56:36.914 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@69d2e517
+15:56:36.960 [main] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/xml/xml.feature
+15:56:37.058 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@f10d055
+15:56:37.189 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap2.xml - soap2.xml: java.io.FileInputStream@b32e983
+15:56:37.300 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope1.xml - envelope1.xml: java.io.FileInputStream@25f7cc38
+15:56:37.429 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope2.xml - envelope2.xml: java.io.FileInputStream@429f0ca8
+15:56:37.506 [main] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@59e0d521
+15:56:37.563 [main] INFO  com.intuit.karate - [print] pretty print:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://foo/bar">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <acc:getAccountByPhoneNumber>
+      <acc:phoneNumber>123456</acc:phoneNumber>
+      <acc:phoneNumberSearchOption>
+        <acc:searchWirelessInd>true</acc:searchWirelessInd>
+        <acc:searchVoipInd>false</acc:searchVoipInd>
+        <acc:searchTollFreeInd>false</acc:searchTollFreeInd>
+      </acc:phoneNumberSearchOption>
+    </acc:getAccountByPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+15:56:37.571 [main] DEBUG c.i.karate.cucumber.CucumberRunner - init test class: class com.intuit.karate.testng.KarateTestngTest
+15:56:37.857 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.each-predicate-dollar.xml
+15:56:37.859 [pool-1-thread-5] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.examples.xml
+15:56:37.860 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.first.xml
+15:56:37.861 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.cukeoptions.second.xml
+15:56:37.861 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.call-once.xml
+15:56:37.878 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 4 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:56:37.880 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:56:37.886 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 5 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/examples.feature
+15:56:37.887 [pool-1-thread-5] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/examples.feature
+15:56:37.889 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 1 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+15:56:37.891 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/first.feature
+15:56:37.902 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 3 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/call-once.feature
+15:56:37.903 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/call-once.feature
+15:56:37.909 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 2 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+15:56:37.910 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/cukeoptions/second.feature
+15:56:38.132 [pool-1-thread-4] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:56:38.139 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 2 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/cukeoptions/second.feature
+15:56:38.154 [pool-1-thread-3] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.call-once
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def helper = Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')(com/intuit/karate/testng/demos/call-once.feature:4)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$643$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 33 common frames omitted
+15:56:38.168 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.js-arrays.xml
+15:56:38.174 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 6 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/demos/js-arrays.feature
+15:56:38.175 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/js-arrays.feature
+15:56:38.195 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 1 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/cukeoptions/first.feature
+15:56:38.208 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.random-jsonpath.xml
+15:56:38.213 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 7 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/random-jsonpath.feature
+15:56:38.214 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/random-jsonpath.feature
+15:56:38.323 [pool-1-thread-3] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.call-once
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def helper = Java.type('com.intuit.karate.junit4.demos.CallOnceHelper')(com/intuit/karate/testng/demos/call-once.feature:4)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$684$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 33 common frames omitted
+15:56:38.330 [pool-1-thread-4] WARN  com.intuit.karate - embedded json script eval failed at path $.totalPrice: javascript evaluation failed: ($.roomInformation[0].roomPrice)
+15:56:38.349 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\data.json - data.json: java.io.FileInputStream@5c9fd4bf
+15:56:38.367 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 3 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/call-once.feature
+15:56:38.375 [pool-1-thread-5] WARN  com.intuit.karate - embedded json script eval failed at path $.fahrenheit: javascript evaluation failed: ($.celsius * 1.8 + 32)
+15:56:38.390 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 4 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/each-predicate-dollar.feature
+15:56:38.403 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.read-from-relative-path.xml
+15:56:38.415 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 8 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:56:38.421 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:56:38.424 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.replace.xml
+15:56:38.427 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 9 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/replace.feature
+15:56:38.428 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/replace.feature
+15:56:38.443 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 5 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/examples.feature
+15:56:38.512 [pool-1-thread-1] INFO  com.intuit.karate - [print] selected index: 1
+15:56:38.530 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 7 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/random-jsonpath.feature
+15:56:38.549 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.schema-like.xml
+15:56:38.548 [pool-1-thread-5] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.scenario-variable-scope.xml
+15:56:38.581 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 11 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/schema-like.feature
+15:56:38.582 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/schema-like.feature
+15:56:38.607 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 10 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:56:38.608 [pool-1-thread-5] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:56:38.614 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\../syntax/for-demos.js - ../syntax/for-demos.js: java.io.FileInputStream@4fe8c9f
+15:56:38.697 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 8 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/read-from-relative-path.feature
+15:56:38.702 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.type-conv.xml
+15:56:38.708 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 12 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/type-conv.feature
+15:56:38.709 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/type-conv.feature
+15:56:38.798 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@574f4dae
+15:56:38.815 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\time-validator.js - time-validator.js: java.io.FileInputStream@417dd913
+15:56:38.916 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 10 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/scenario-variable-scope.feature
+15:56:38.922 [pool-1-thread-5] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.users.xml
+15:56:39.076 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 13 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/users.feature
+15:56:39.129 [pool-1-thread-5] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/users.feature
+15:56:39.287 [pool-1-thread-5] DEBUG com.intuit.karate - 
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:56:39.744 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 9 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/replace.feature
+15:56:39.770 [pool-1-thread-3] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.demos.xml-and-xpath.xml
+15:56:39.775 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 14 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:56:39.775 [pool-1-thread-3] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:56:39.847 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\demos\odds.json - odds.json: java.io.FileInputStream@3207d9bd
+15:56:39.866 [pool-1-thread-1] INFO  com.intuit.karate - [print] pretty print:
+{
+  "id": "390",
+  "count": 4,
+  "odd": {
+    "price": "1.20",
+    "status": 2,
+    "ck": 12.2,
+    "name": "2"
+  },
+  "data": {
+    "countryId": 35,
+    "countryName": "Norway",
+    "status": 0,
+    "sportName": "Soccer",
+    "time": "2016-06-12T12:00:00Z"
+  },
+  "odds": [
+    {
+      "price": "1.30",
+      "status": 0,
+      "ck": 12.2,
+      "name": "1"
+    },
+    {
+      "price": "5.25",
+      "status": 1,
+      "name": "X"
+    },
+    {
+      "price": "2.70",
+      "status": 0,
+      "ck": 12.2,
+      "name": "0"
+    },
+    {
+      "price": "1.20",
+      "status": 2,
+      "name": "2"
+    }
+  ]
+}
+
+15:56:39.947 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 6 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/demos/js-arrays.feature
+15:56:39.964 [pool-1-thread-1] INFO  com.intuit.karate - [print] pretty print:
+{
+  "foo": "bar",
+  "baz": [
+    1,
+    2,
+    3
+  ]
+}
+
+15:56:39.964 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 11 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/demos/schema-like.feature
+15:56:39.972 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.files.working-dir.xml
+15:56:39.977 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 15 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/files/working-dir.feature
+15:56:39.977 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/files/working-dir.feature
+15:56:40.037 [pool-1-thread-2] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.http.dummy-http-client.xml
+15:56:40.051 [pool-1-thread-1] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.files.working-dir
+java.lang.RuntimeException: javascript evaluation failed: read('classpath:file-utils.js')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def text = call read('classpath:file-utils.js') 'relative.txt'(com/intuit/karate/testng/files/working-dir.feature:5)
+Caused by: com.intuit.karate.exception.KarateFileNotFoundException: file not found: file-utils.js, classpath: true
+	at com.intuit.karate.FileUtils.readFileAsString(FileUtils.java:89)
+	at com.intuit.karate.FileUtils.readFile(FileUtils.java:65)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$1053$15A$\^eval\_.L:1(<eval>:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:639)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:117)
+	at jdk.nashorn.internal.scripts.Script$1062$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+15:56:40.090 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 15 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/files/working-dir.feature
+15:56:40.099 [pool-1-thread-1] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.smoke.smoke.xml
+15:56:40.103 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 17 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/smoke/smoke.feature
+15:56:40.104 [pool-1-thread-1] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/smoke/smoke.feature
+15:56:40.138 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 16 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/http/dummy-http-client.feature
+15:56:40.139 [pool-1-thread-2] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/http/dummy-http-client.feature
+15:56:40.156 [pool-1-thread-4] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.type-conv
+java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def Pojo = Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$1072$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 31 common frames omitted
+15:56:40.208 [pool-1-thread-4] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.demos.type-conv
+java.lang.RuntimeException: javascript evaluation failed: Java.type('com.intuit.karate.junit4.demos.SimplePojo')
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def Pojo = Java.type('com.intuit.karate.junit4.demos.SimplePojo')(com/intuit/karate/testng/demos/type-conv.feature:89)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.cucumber.CucumberRunner.run(CucumberRunner.java:149)
+	at com.intuit.karate.cucumber.CucumberRunner.lambda$parallel$0(CucumberRunner.java:201)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$1098$\^eval\_.:program(<eval>:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 31 common frames omitted
+15:56:40.220 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 12 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/demos/type-conv.feature
+15:56:40.236 [pool-1-thread-4] DEBUG c.i.k.cucumber.KarateJunitFormatter - >> target\surefire-reports\TEST-com.intuit.karate.testng.xml.xml.xml
+15:56:40.256 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-json.json - demo-json.json: java.io.FileInputStream@2202329b
+15:56:40.256 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - >>>> feature 18 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/xml/xml.feature
+15:56:40.257 [pool-1-thread-4] DEBUG c.i.karate.cucumber.CucumberRunner - loading feature: /C:/Research/karate-master/karate-testng/target/test-classes/com/intuit/karate/testng/xml/xml.feature
+15:56:40.264 [pool-1-thread-1] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\smoke\demo-text.txt - demo-text.txt: java.io.FileInputStream@62c205f8
+15:56:40.268 [pool-1-thread-2] ERROR c.i.k.cucumber.KarateJunitFormatter - failed feature: com.intuit.karate.testng.http.dummy-http-client
+java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)
+	at com.intuit.karate.StepDefs.configure(StepDefs.java:102)
+	at ?.* configure httpClientClass = 'com.intuit.karate.junit4.http.DummyHttpClient'(com/intuit/karate/testng/http/dummy-http-client.feature:4)
+15:56:40.270 [pool-1-thread-2] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 16 of 18 on thread pool-1-thread-2: com/intuit/karate/testng/http/dummy-http-client.feature
+15:56:40.306 [pool-1-thread-1] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 17 of 18 on thread pool-1-thread-1: com/intuit/karate/testng/smoke/smoke.feature
+15:56:40.331 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@36055bab
+15:56:40.351 [pool-1-thread-3] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"John","lastName":"Smith"},"age":"20"}}
+15:56:40.416 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap2.xml - soap2.xml: java.io.FileInputStream@55c5e2f5
+15:56:40.486 [pool-1-thread-3] INFO  com.intuit.karate - [print] {"query":{"name":{"firstName":"Jane","lastName":"Doe"}}}
+15:56:40.513 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope1.xml - envelope1.xml: java.io.FileInputStream@32f78fb7
+15:56:40.570 [pool-1-thread-3] INFO  com.intuit.karate - [print] {"query":{"name":{"lastName":"Waldo"}}}
+15:56:40.590 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\envelope2.xml - envelope2.xml: java.io.FileInputStream@2f84eefe
+15:56:40.612 [pool-1-thread-3] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 14 of 18 on thread pool-1-thread-3: com/intuit/karate/testng/demos/xml-and-xpath.feature
+15:56:40.633 [pool-1-thread-4] DEBUG com.intuit.karate - loaded file from: C:\Research\karate-master\karate-testng\target\test-classes\com\intuit\karate\testng\xml\soap1.xml - soap1.xml: java.io.FileInputStream@37a9568d
+15:56:40.662 [pool-1-thread-4] INFO  com.intuit.karate - [print] pretty print:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:acc="http://foo/bar">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <acc:getAccountByPhoneNumber>
+      <acc:phoneNumber>123456</acc:phoneNumber>
+      <acc:phoneNumberSearchOption>
+        <acc:searchWirelessInd>true</acc:searchWirelessInd>
+        <acc:searchVoipInd>false</acc:searchVoipInd>
+        <acc:searchTollFreeInd>false</acc:searchTollFreeInd>
+      </acc:phoneNumberSearchOption>
+    </acc:getAccountByPhoneNumber>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+15:56:40.663 [pool-1-thread-4] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 18 of 18 on thread pool-1-thread-4: com/intuit/karate/testng/xml/xml.feature
+15:56:41.544 [pool-1-thread-5] DEBUG com.intuit.karate - 
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 39e11a861e8e3403-HKG
+1 < Cache-Control: public, max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:56:32 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expires: Thu, 14 Sep 2017 09:56:32 GMT
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=ddf2aa3400a4f26d056d6dccf22b37f031505368592; expires=Fri, 14-Sep-18 05:56:32 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+15:56:41.545 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2265
+15:56:41.564 [pool-1-thread-5] DEBUG com.intuit.karate - 
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=ddf2aa3400a4f26d056d6dccf22b37f031505368592
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+
+15:56:44.270 [pool-1-thread-5] DEBUG com.intuit.karate - 
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 39e11a971fe03319-HKG
+2 < Cache-Control: public, max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Thu, 14 Sep 2017 05:56:35 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expires: Thu, 14 Sep 2017 09:56:35 GMT
+2 < Pragma: no-cache
+2 < Server: cloudflare-nginx
+2 < Transfer-Encoding: chunked
+2 < Vary: Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+15:56:44.270 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2708
+15:56:44.333 [pool-1-thread-5] DEBUG com.intuit.karate - 
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_101)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+15:56:46.142 [pool-1-thread-5] DEBUG com.intuit.karate - 
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < CF-RAY: 39e11a9f3f1133c1-HKG
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 14 Sep 2017 05:56:36 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare-nginx
+1 < Set-Cookie: __cfduid=d0b4b6cce5fac2f7646c43d5d6542253d1505368596; expires=Fri, 14-Sep-18 05:56:36 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+15:56:46.143 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1812
+15:56:46.153 [pool-1-thread-5] INFO  com.intuit.karate - [print] created id is: 11
+15:56:46.160 [pool-1-thread-5] INFO  c.i.karate.cucumber.CucumberRunner - <<<< feature 13 of 18 on thread pool-1-thread-5: com/intuit/karate/testng/demos/users.feature

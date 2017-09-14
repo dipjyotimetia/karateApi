@@ -1,0 +1,814 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 14 15:56:20 AEST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>30 seconds (30044 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: </td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: javascript evaluation failed: Java.type(&apos;com.intuit.karate.junit4.demos.CallOnceHelper&apos;)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+Caused by: java.lang.RuntimeException: javascript evaluation failed: Java.type(&apos;com.intuit.karate.junit4.demos.CallOnceHelper&apos;)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def helper = Java.type(&apos;com.intuit.karate.junit4.demos.CallOnceHelper&apos;)(com/intuit/karate/testng/demos/call-once.feature:4)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:59)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$20$\^eval\_.:program(&lt;eval&gt;:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 63 more
+... Removed 72 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1639765351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1639765351'><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: javascript evaluation failed: Java.type(&apos;com.intuit.karate.junit4.demos.CallOnceHelper&apos;)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.RuntimeException: javascript evaluation failed: Java.type(&apos;com.intuit.karate.junit4.demos.CallOnceHelper&apos;)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def helper = Java.type(&apos;com.intuit.karate.junit4.demos.CallOnceHelper&apos;)(com/intuit/karate/testng/demos/call-once.feature:4)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.CallOnceHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$20$\^eval\_.:program(&lt;eval&gt;:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 63 more
+</pre></div></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: convert between json, xml and string</td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+Caused by: java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def Pojo = Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:59)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$416$\^eval\_.:program(&lt;eval&gt;:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 60 more
+... Removed 71 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1496097932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1496097932'><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.RuntimeException: javascript evaluation failed: Java.type(className)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def Pojo = Java.type(className)(com/intuit/karate/testng/demos/type-conv.feature:79)
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:397)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.ClassNotFoundException: com.intuit.karate.junit4.demos.SimplePojo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at jdk.nashorn.internal.runtime.Context.findClass(Context.java:1057)
+	at jdk.nashorn.internal.objects.NativeJava.simpleType(NativeJava.java:498)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:322)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:314)
+	at jdk.nashorn.internal.objects.NativeJava.type(NativeJava.java:310)
+	at jdk.nashorn.internal.scripts.Script$416$\^eval\_.:program(&lt;eval&gt;:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	... 60 more
+</pre></div></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: test working directory edge cases</td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: javascript evaluation failed: read(&apos;classpath:file-utils.js&apos;)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+Caused by: java.lang.RuntimeException: javascript evaluation failed: read(&apos;classpath:file-utils.js&apos;)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def text = call read(&apos;classpath:file-utils.js&apos;) &apos;relative.txt&apos;(com/intuit/karate/testng/files/working-dir.feature:5)
+Caused by: com.intuit.karate.exception.KarateFileNotFoundException: file not found: file-utils.js, classpath: true
+	at com.intuit.karate.FileUtils.readFileAsString(FileUtils.java:89)
+	at com.intuit.karate.FileUtils.readFile(FileUtils.java:65)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$531$15A$\^eval\_.L:1(&lt;eval&gt;:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:639)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:117)
+	at jdk.nashorn.internal.scripts.Script$536$\^eval\_.:program(&lt;eval&gt;:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:59)
+... Removed 71 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace705825928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace705825928'><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: javascript evaluation failed: read(&apos;classpath:file-utils.js&apos;)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.RuntimeException: javascript evaluation failed: read(&apos;classpath:file-utils.js&apos;)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:383)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at ?.* def text = call read(&apos;classpath:file-utils.js&apos;) &apos;relative.txt&apos;(com/intuit/karate/testng/files/working-dir.feature:5)
+Caused by: com.intuit.karate.exception.KarateFileNotFoundException: file not found: file-utils.js, classpath: true
+	at com.intuit.karate.FileUtils.readFileAsString(FileUtils.java:89)
+	at com.intuit.karate.FileUtils.readFile(FileUtils.java:65)
+	at jdk.nashorn.internal.scripts.Script$Recompilation$531$15A$\^eval\_.L:1(&lt;eval&gt;:3)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:639)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:117)
+	at jdk.nashorn.internal.scripts.Script$536$\^eval\_.:program(&lt;eval&gt;:1)
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:637)
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:494)
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:393)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:446)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:403)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:399)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:379)
+	at com.intuit.karate.Script.evalInNashorn(Script.java:358)
+	at com.intuit.karate.Script.eval(Script.java:269)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.call(Script.java:1254)
+	at com.intuit.karate.Script.eval(Script.java:223)
+	at com.intuit.karate.Script.eval(Script.java:182)
+	at com.intuit.karate.Script.assign(Script.java:606)
+	at com.intuit.karate.Script.assign(Script.java:537)
+	at com.intuit.karate.StepDefs.def(StepDefs.java:268)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: swapping an http client on the fly</td>
+<td><div><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+Caused by: java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)
+	at com.intuit.karate.StepDefs.configure(StepDefs.java:102)
+	at ?.* configure httpClientClass = &apos;com.intuit.karate.junit4.http.DummyHttpClient&apos;(com/intuit/karate/testng/http/dummy-http-client.feature:4)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace724944810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace724944810'><pre>cucumber.runtime.CucumberException: java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.testng.KarateRunner.feature(KarateRunner.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.lang.RuntimeException: failed to construct class by name: java.lang.ClassNotFoundException: com.intuit.karate.junit4.http.DummyHttpClient, aborting
+	at com.intuit.karate.http.HttpClient.construct(HttpClient.java:261)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:172)
+	at com.intuit.karate.ScriptContext.configure(ScriptContext.java:144)
+	at com.intuit.karate.StepDefs.configure(StepDefs.java:102)
+	at ?.* configure httpClientClass = &apos;com.intuit.karate.junit4.http.DummyHttpClient&apos;(com/intuit/karate/testng/http/dummy-http-client.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.testParallel()'><b>testParallel</b><br>Test class: com.intuit.karate.testng.KarateTestngTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [there are scenario failures]
+	at com.intuit.karate.testng.KarateRunner.testParallel(KarateRunner.java:71)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889348204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1889348204'><pre>java.lang.AssertionError: expected [false] but found [there are scenario failures]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.intuit.karate.testng.KarateRunner.testParallel(KarateRunner.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</pre></div></td>
+<td>12</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: first</td>
+<td></td>
+<td>2</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: second</td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: various javascript tests</td>
+<td></td>
+<td>1</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: reading files</td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: replace keyword</td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: json-schema like validation</td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: sample karate script that calls a live www web-service</td>
+<td></td>
+<td>5</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: xml and xpath demos</td>
+<td></td>
+<td>1</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+<tr>
+<td title='com.intuit.karate.testng.KarateTestngTest.feature()'><b>feature</b><br>Test class: com.intuit.karate.testng.KarateTestngTest<br>Test method: Runs Cucumber Feature<br>Parameters: xml samples and tests</td>
+<td></td>
+<td>0</td>
+<td>com.intuit.karate.testng.KarateTestngTest@2ed94a8b</td></tr>
+</table><p>
+</body>
+</html>

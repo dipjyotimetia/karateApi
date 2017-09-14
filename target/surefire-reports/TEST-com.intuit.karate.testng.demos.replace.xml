@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="replace keyword" skipped="0" tests="7" time="1.240863">
+<testcase classname="com.intuit.karate.testng.demos.replace" name="one-line default placeholder" time="0.122207">
+<system-out><![CDATA[* def text = 'hello <foo> world'............................................passed
+* replace text.foo = 'bar'..................................................passed
+* match text == 'hello bar world'...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.replace" name="one-line non-default placeholder 1" time="0.153646">
+<system-out><![CDATA[* def text = 'hello ${foo} world'...........................................passed
+* replace text.${foo} = 'bar'...............................................passed
+* match text == 'hello bar world'...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.replace" name="one-line non-default placeholder 2" time="0.208751">
+<system-out><![CDATA[* def text = 'hello @@foo@@ world'..........................................passed
+* replace text.@@foo@@ = 'bar'..............................................passed
+* match text == 'hello bar world'...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.replace" name="table default placeholder" time="0.085843">
+<system-out><![CDATA[* def text = 'hello <one> world <two> bye'..................................passed
+* replace text..............................................................passed
+* match text == 'hello cruel world good bye'................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.replace" name="table non-default placeholder" time="0.191284">
+<system-out><![CDATA[* def text = 'hello ${one} world @@two@@ bye'...............................passed
+* replace text..............................................................passed
+* match text == 'hello cruel world good bye'................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.replace" name="table with expression evaluation" time="0.363734">
+<system-out><![CDATA[* def text = 'hello <one> world <two> bye'..................................passed
+* def first = 'cruel'.......................................................passed
+* def second = 'good'.......................................................passed
+* replace text..............................................................passed
+* match text == 'hello cruel world good bye'................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.replace" name="table with complex expression evaluation" time="0.115398">
+<system-out><![CDATA[* def text = 'hello <one> world <two> bye'..................................passed
+* def json = { first: 'cruel', second: 'good' }.............................passed
+* replace text..............................................................passed
+* match text == 'hello cruel world good bye'................................passed
+]]></system-out>
+</testcase>
+</testsuite>

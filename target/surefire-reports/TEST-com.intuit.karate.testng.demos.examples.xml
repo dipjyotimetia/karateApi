@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="com.intuit.karate.testng.demos.examples" skipped="0" tests="1" time="0.454022">
+<testcase classname="com.intuit.karate.testng.demos.examples" name="1" time="0.454022">
+<system-out><![CDATA[Given def cat =.............................................................passed
+Then match cat.kittens[*].id == [23, 42]....................................passed
+Then match cat.kittens[*].id contains 23....................................passed
+Then match cat.kittens[*].id contains [42, 23]..............................passed
+Then match each cat.kittens contains { id: '#number' }......................passed
+Then match each cat.kittens == { id: '#notnull', name: '#regex [A-Z][a-z]+' }.passed
+* def isLessThanFifty = function(x) { return x < 50 } // >..................passed
+Then match each cat.kittens contains { id: '#? isLessThanFifty(_)' }........passed
+Given def foo = 42..........................................................passed
+And def bar = { hello: 'world' }............................................passed
+And def temp = { id: '#(foo)', value: '#(bar.hello)' }......................passed
+Then match temp == { id: 42, value: 'world' }...............................passed
+Given def temperature = { celsius: 100, fahrenheit: 212 }...................passed
+Then match temperature contains { fahrenheit: '#($.celsius * 1.8 + 32)' }...passed
+]]></system-out>
+</testcase>
+</testsuite>

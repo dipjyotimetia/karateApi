@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="json-schema like validation" skipped="0" tests="3" time="1.358453">
+<testcase classname="com.intuit.karate.testng.demos.schema-like" name="but simpler and more powerful" time="1.156317">
+<system-out><![CDATA[* def response = read('odds.json')..........................................passed
+* def oddSchema = { price: '#string', status: '#? _ < 3', ck: '##number', name: '#regex[0-9X]' }.passed
+* def isValidTime = read('time-validator.js')...............................passed
+Then match response ==......................................................passed
+* match $.odds == '#[]'.....................................................passed
+* match $.odds == '#[4]'....................................................passed
+* match $.odds == '##[_ > 0]'...............................................passed
+* match $.odds == '#[$.count]'..............................................passed
+* def isValidOdd = function(o){ return o.name.length == 1 }.................passed
+* match $.odds == '#[]? isValidOdd(_)'......................................passed
+* def foo = ['bar', 'baz']..................................................passed
+* match foo == '#[]'........................................................passed
+* match foo == '#[2]'.......................................................passed
+* match foo == '#[2] #string'...............................................passed
+* match foo == '#[] #string? _.length == 3'.................................passed
+* match foo == '##[] #string'...............................................passed
+* def foo = [{ a: 1, b: 2 }, { a: 3, b: 4 }]................................passed
+* def exact = { a: '#number', b: '#number' }................................passed
+* def partial = { b: '#number' }............................................passed
+* def nope = { c: '#number' }...............................................passed
+* match foo[0] == '#(exact)'................................................passed
+* match foo[0] == '#(^partial)'.............................................passed
+* match foo[0] == '#(!^nope)'...............................................passed
+* match foo == '#[] exact'..................................................passed
+* match foo == '#[] ^partial'...............................................passed
+* match foo == '#[] !^nope'.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.schema-like" name="pretty print json" time="0.105275">
+<system-out><![CDATA[* def json = read('odds.json')..............................................passed
+* print 'pretty print:\n' + karate.pretty(json).............................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.schema-like" name="more pretty print" time="0.096861">
+<system-out><![CDATA[* def myJson = { foo: 'bar', baz: [1, 2, 3]}................................passed
+* print 'pretty print:\n' + karate.pretty(myJson)...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

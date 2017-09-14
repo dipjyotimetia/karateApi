@@ -1,0 +1,873 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "but simpler and more powerful",
+        "description": "",
+        "id": "json-schema-like-validation;but-simpler-and-more-powerful",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 211832598,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def response \u003d read(\u0027odds.json\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "response",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027odds.json\u0027)",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 193770,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "def oddSchema \u003d { price: \u0027#string\u0027, status: \u0027#? _ \u003c 3\u0027, ck: \u0027##number\u0027, name: \u0027#regex[0-9X]\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "oddSchema",
+                  "offset": 4
+                },
+                {
+                  "val": "{ price: \u0027#string\u0027, status: \u0027#? _ \u003c 3\u0027, ck: \u0027##number\u0027, name: \u0027#regex[0-9X]\u0027 }",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 28772753,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "def isValidTime \u003d read(\u0027time-validator.js\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "isValidTime",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027time-validator.js\u0027)",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 191369365,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "match response \u003d\u003d",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "response",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.matchEqualsDocString(String,String,String,String,String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "content_type": "",
+              "line": 11,
+              "value": "{ \n  id: \u0027#regex[0-9]+\u0027,\n  count: \u0027#number\u0027,\n  odd: \u0027#(oddSchema)\u0027,\n  data: { \n    countryId: \u0027#number\u0027, \n    countryName: \u0027#string\u0027, \n    leagueName: \u0027##string\u0027, \n    status: \u0027#number? _ \u003e\u003d 0\u0027, \n    sportName: \u0027#string\u0027,\n    time: \u0027#? isValidTime(_)\u0027\n  },\n  odds: \u0027#[] oddSchema\u0027  \n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 5823355,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 27,
+                "value": "# other examples"
+              },
+              {
+                "line": 29,
+                "value": "# should be an array"
+              }
+            ],
+            "line": 30,
+            "name": "match $.odds \u003d\u003d \u0027#[]\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$.odds",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#[]\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 58134614,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 32,
+                "value": "# should be an array of size 4"
+              }
+            ],
+            "line": 33,
+            "name": "match $.odds \u003d\u003d \u0027#[4]\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$.odds",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#[4]\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 13152531,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 35,
+                "value": "# optionally present (or null) and should be an array of size greater than zero"
+              }
+            ],
+            "line": 36,
+            "name": "match $.odds \u003d\u003d \u0027##[_ \u003e 0]\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$.odds",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027##[_ \u003e 0]\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 30680892,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 38,
+                "value": "# should be an array of size equal to $.count"
+              }
+            ],
+            "line": 39,
+            "name": "match $.odds \u003d\u003d \u0027#[$.count]\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$.odds",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#[$.count]\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5940356,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 41,
+                "value": "# use a predicate function to validate each array element"
+              }
+            ],
+            "line": 42,
+            "name": "def isValidOdd \u003d function(o){ return o.name.length \u003d\u003d 1 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "isValidOdd",
+                  "offset": 4
+                },
+                {
+                  "val": "function(o){ return o.name.length \u003d\u003d 1 }",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 94293605,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "match $.odds \u003d\u003d \u0027#[]? isValidOdd(_)\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "$.odds",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#[]? isValidOdd(_)\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 160928,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 45,
+                "value": "# for simple arrays, types can be \u0027in-line\u0027"
+              }
+            ],
+            "line": 46,
+            "name": "def foo \u003d [\u0027bar\u0027, \u0027baz\u0027]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo",
+                  "offset": 4
+                },
+                {
+                  "val": "[\u0027bar\u0027, \u0027baz\u0027]",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5698144,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 48,
+                "value": "# should be an array"
+              }
+            ],
+            "line": 49,
+            "name": "match foo \u003d\u003d \u0027#[]\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[]\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 36689395,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 51,
+                "value": "# should be an array of size 2"
+              }
+            ],
+            "line": 52,
+            "name": "match foo \u003d\u003d \u0027#[2]\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[2]\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 36433635,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 54,
+                "value": "# should be an array of strings with size 2"
+              }
+            ],
+            "line": 55,
+            "name": "match foo \u003d\u003d \u0027#[2] #string\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[2] #string\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 76548485,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 57,
+                "value": "# should be an array of strings each of length 3"
+              }
+            ],
+            "line": 58,
+            "name": "match foo \u003d\u003d \u0027#[] #string? _.length \u003d\u003d 3\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[] #string? _.length \u003d\u003d 3\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 226054557,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 60,
+                "value": "# should be null or an array of strings"
+              }
+            ],
+            "line": 61,
+            "name": "match foo \u003d\u003d \u0027##[] #string\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027##[] #string\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 243444,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 63,
+                "value": "# contains"
+              }
+            ],
+            "line": 64,
+            "name": "def foo \u003d [{ a: 1, b: 2 }, { a: 3, b: 4 }]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo",
+                  "offset": 4
+                },
+                {
+                  "val": "[{ a: 1, b: 2 }, { a: 3, b: 4 }]",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 133832,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "def exact \u003d { a: \u0027#number\u0027, b: \u0027#number\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "exact",
+                  "offset": 4
+                },
+                {
+                  "val": "{ a: \u0027#number\u0027, b: \u0027#number\u0027 }",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 146559,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "def partial \u003d { b: \u0027#number\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "partial",
+                  "offset": 4
+                },
+                {
+                  "val": "{ b: \u0027#number\u0027 }",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 95653,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "def nope \u003d { c: \u0027#number\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nope",
+                  "offset": 4
+                },
+                {
+                  "val": "{ c: \u0027#number\u0027 }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 15403462,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "match foo[0] \u003d\u003d \u0027#(exact)\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo[0]",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#(exact)\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 11677910,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "match foo[0] \u003d\u003d \u0027#(^partial)\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo[0]",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#(^partial)\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 43371166,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "match foo[0] \u003d\u003d \u0027#(!^nope)\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo[0]",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 13
+                },
+                {
+                  "val": "\u0027#(!^nope)\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 10409786,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "match foo \u003d\u003d \u0027#[] exact\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[] exact\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 26550969,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "match foo \u003d\u003d \u0027#[] ^partial\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[] ^partial\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 26504990,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "match foo \u003d\u003d \u0027#[] !^nope\u0027",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "foo",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 10
+                },
+                {
+                  "val": "\u0027#[] !^nope\u0027",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "pretty print json",
+        "description": "",
+        "id": "json-schema-like-validation;pretty-print-json",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 89574573,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "def json \u003d read(\u0027odds.json\u0027)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "json",
+                  "offset": 4
+                },
+                {
+                  "val": "read(\u0027odds.json\u0027)",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 15700275,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "print \u0027pretty print:\\n\u0027 + karate.pretty(json)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027pretty print:\\n\u0027 + karate.pretty(json)",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 81,
+        "name": "more pretty print",
+        "description": "",
+        "id": "json-schema-like-validation;more-pretty-print",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 71804411,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "def myJson \u003d { foo: \u0027bar\u0027, baz: [1, 2, 3]}",
+            "match": {
+              "arguments": [
+                {
+                  "val": "myJson",
+                  "offset": 4
+                },
+                {
+                  "val": "{ foo: \u0027bar\u0027, baz: [1, 2, 3]}",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 25057053,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "print \u0027pretty print:\\n\u0027 + karate.pretty(myJson)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027pretty print:\\n\u0027 + karate.pretty(myJson)",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      }
+    ],
+    "name": "json-schema like validation",
+    "description": "",
+    "id": "json-schema-like-validation",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/schema-like.feature"
+  }
+]

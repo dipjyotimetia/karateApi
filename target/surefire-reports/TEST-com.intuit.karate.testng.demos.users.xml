@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="sample karate script that calls a live www web-service" skipped="0" tests="2" time="6.997483">
+<testcase classname="com.intuit.karate.testng.demos.users" name="get users and then get first by id" time="5.114279">
+<system-out><![CDATA[* url 'https://jsonplaceholder.typicode.com'................................passed
+Given path 'users'..........................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+* def first = response[0]...................................................passed
+Given path 'users', first.id................................................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.users" name="create a user and then get it by id" time="1.883204">
+<system-out><![CDATA[* url 'https://jsonplaceholder.typicode.com'................................passed
+* def user =................................................................passed
+Given url 'https://jsonplaceholder.typicode.com/users'......................passed
+And request user............................................................passed
+When method post............................................................passed
+Then status 201.............................................................passed
+* def id = response.id......................................................passed
+* print 'created id is: ' + id..............................................passed
+Given path id...............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,369 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 106630825,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "url \u0027https://jsonplaceholder.typicode.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://jsonplaceholder.typicode.com\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "get users and then get first by id",
+        "description": "",
+        "id": "sample-karate-script-that-calls-a-live-www-web-service;get-users-and-then-get-first-by-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16380932,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "path \u0027users\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027users\u0027",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2269295586,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 255349,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7343544,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "def first \u003d response[0]",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first",
+                  "offset": 4
+                },
+                {
+                  "val": "response[0]",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5356173,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "path \u0027users\u0027, first.id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027users\u0027, first.id",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2708893825,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "method get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "get",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122338,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 40576695,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "url \u0027https://jsonplaceholder.typicode.com\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://jsonplaceholder.typicode.com\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "* "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "create a user and then get it by id",
+        "description": "",
+        "id": "sample-karate-script-that-calls-a-live-www-web-service;create-a-user-and-then-get-it-by-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 282444,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "def user \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "* ",
+            "doc_string": {
+              "content_type": "",
+              "line": 21,
+              "value": "{\n    \"name\": \"Test User\",\n    \"username\": \"testuser\",\n    \"email\": \"test@user.com\",\n    \"address\": {\n      \"street\": \"Has No Name\",\n      \"suite\": \"Apt. 123\",\n      \"city\": \"Electri\",\n      \"zipcode\": \"54321-6789\"\n    }\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 6815194,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "url \u0027https://jsonplaceholder.typicode.com/users\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027https://jsonplaceholder.typicode.com/users\u0027",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.url(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8522584,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "request user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user",
+                  "offset": 8
+                }
+              ],
+              "location": "StepDefs.request(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1812500692,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "method post",
+            "match": {
+              "arguments": [
+                {
+                  "val": "post",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.method(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134654,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "status 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefs.status(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 229486,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "def id \u003d response.id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 4
+                },
+                {
+                  "val": "response.id",
+                  "offset": 9
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8571026,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "print \u0027created id is: \u0027 + id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027created id is: \u0027 + id",
+                  "offset": 6
+                }
+              ],
+              "location": "StepDefs.print(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5570879,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "path id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "id",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefs.path(String\u003e)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "sample karate script that calls a live www web-service",
+    "description": "",
+    "id": "sample-karate-script-that-calls-a-live-www-web-service",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/users.feature"
+  }
+]

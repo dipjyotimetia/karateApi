@@ -1,0 +1,378 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 117579635,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "def cat \u003d",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cat",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefs.defDocString(String,String)"
+            },
+            "keyword": "Given ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "{\n  name: \u0027Billie\u0027,\n  kittens: [\n      { id: 23, name: \u0027Bob\u0027 },\n      { id: 42, name: \u0027Wild\u0027 }\n  ]\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 56244537,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "match cat.kittens[*].id \u003d\u003d [23, 42]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "cat.kittens[*].id",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 24
+                },
+                {
+                  "val": "[23, 42]",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 71817137,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "match cat.kittens[*].id contains 23",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "cat.kittens[*].id",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " 23",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 542309,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "match cat.kittens[*].id contains [42, 23]",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "cat.kittens[*].id",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " [42, 23]",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 352234,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "match each cat.kittens contains { id: \u0027#number\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "cat.kittens",
+                  "offset": 11
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { id: \u0027#number\u0027 }",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 516035,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "match each cat.kittens \u003d\u003d { id: \u0027#notnull\u0027, name: \u0027#regex [A-Z][a-z]+\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "cat.kittens",
+                  "offset": 11
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 23
+                },
+                {
+                  "val": "{ id: \u0027#notnull\u0027, name: \u0027#regex [A-Z][a-z]+\u0027 }",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6954773,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "def isLessThanFifty \u003d function(x) { return x \u003c 50 } // \u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "isLessThanFifty",
+                  "offset": 4
+                },
+                {
+                  "val": "function(x) { return x \u003c 50 } // \u003e",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 89650111,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "match each cat.kittens contains { id: \u0027#? isLessThanFifty(_)\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "each ",
+                  "offset": 6
+                },
+                {
+                  "val": "cat.kittens",
+                  "offset": 11
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { id: \u0027#? isLessThanFifty(_)\u0027 }",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6643182,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "def foo \u003d 42",
+            "match": {
+              "arguments": [
+                {
+                  "val": "foo",
+                  "offset": 4
+                },
+                {
+                  "val": "42",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204444,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "def bar \u003d { hello: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bar",
+                  "offset": 4
+                },
+                {
+                  "val": "{ hello: \u0027world\u0027 }",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16768061,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "def temp \u003d { id: \u0027#(foo)\u0027, value: \u0027#(bar.hello)\u0027 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "temp",
+                  "offset": 4
+                },
+                {
+                  "val": "{ id: \u0027#(foo)\u0027, value: \u0027#(bar.hello)\u0027 }",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337866,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "match temp \u003d\u003d { id: 42, value: \u0027world\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "temp",
+                  "offset": 6
+                },
+                {},
+                {
+                  "val": "\u003d\u003d",
+                  "offset": 11
+                },
+                {
+                  "val": "{ id: 42, value: \u0027world\u0027 }",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefs.matchEquals(String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 145328,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "def temperature \u003d { celsius: 100, fahrenheit: 212 }",
+            "match": {
+              "arguments": [
+                {
+                  "val": "temperature",
+                  "offset": 4
+                },
+                {
+                  "val": "{ celsius: 100, fahrenheit: 212 }",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.def(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 86266530,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "match temperature contains { fahrenheit: \u0027#($.celsius * 1.8 + 32)\u0027 }",
+            "match": {
+              "arguments": [
+                {},
+                {
+                  "val": "temperature",
+                  "offset": 6
+                },
+                {},
+                {},
+                {},
+                {
+                  "val": " { fahrenheit: \u0027#($.celsius * 1.8 + 32)\u0027 }",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefs.matchContains(String,String,String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "com/intuit/karate/testng/demos/examples.feature"
+  }
+]

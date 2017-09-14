@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="com.intuit.karate.testng.demos.scenario-variable-scope" skipped="0" tests="2" time="0.300267">
+<testcase classname="com.intuit.karate.testng.demos.scenario-variable-scope" name="1" time="0.193919">
+<system-out><![CDATA[* def a = 1.................................................................passed
+* assert a == 1.............................................................passed
+* def a = 2.................................................................passed
+* def b = 3.................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.demos.scenario-variable-scope" name="2" time="0.106348">
+<system-out><![CDATA[* def a = 1.................................................................passed
+* assert a == 1.............................................................passed
+* assert typeof b == 'undefined'............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

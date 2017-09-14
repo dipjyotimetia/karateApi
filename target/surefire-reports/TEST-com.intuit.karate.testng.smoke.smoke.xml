@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="com.intuit.karate.testng.smoke.smoke" skipped="0" tests="1" time="0.544635">
-<testcase classname="com.intuit.karate.testng.smoke.smoke" name="1" time="0.544635">
+<testsuite failures="0" name="com.intuit.karate.testng.smoke.smoke" skipped="0" tests="1" time="0.19647">
+<testcase classname="com.intuit.karate.testng.smoke.smoke" name="1" time="0.19647">
 <system-out><![CDATA[* assert someConfig == 'someValue'..........................................passed
 * def reader = function() { return karate.read('demo-json.json') }..........passed
 * def fromFile = call reader................................................passed

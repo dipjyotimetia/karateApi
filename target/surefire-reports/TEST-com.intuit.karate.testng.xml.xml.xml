@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="xml samples and tests" skipped="0" tests="5" time="0.387841">
+<testcase classname="com.intuit.karate.testng.xml.xml" name="placeholders using xml embedded expressions" time="0.117709">
+<system-out><![CDATA[* def search = { number: '123456', wireless: true, voip: false, tollFree: false }.passed
+* def req = read('soap1.xml')...............................................passed
+* def phone = req/Envelope/Body/getAccountByPhoneNumber.....................passed
+* match phone /getAccountByPhoneNumber/phoneNumber == '123456'..............passed
+* match phone ==............................................................passed
+* xmlstring reqString = req.................................................passed
+* match reqString contains '<acc:phoneNumber>123456</acc:phoneNumber>'......passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.xml.xml" name="placeholders using string replace" time="0.096627">
+<system-out><![CDATA[* def req = read('soap2.xml')...............................................passed
+* replace req...............................................................passed
+* xml req = req.............................................................passed
+* match req /Envelope/Body/getAccountByPhoneNumber/phoneNumber == '123456'..passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.xml.xml" name="set xml chunks using xpath" time="0.051818">
+<system-out><![CDATA[* def req = read('envelope1.xml')...........................................passed
+* def phone = '123456'......................................................passed
+* def search =..............................................................passed
+* set req /Envelope/Body = search...........................................passed
+* match req ==..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.xml.xml" name="set xml chunks using embedded expressions" time="0.060982">
+<system-out><![CDATA[* def phone = '123456'......................................................passed
+* def searchOption = null...................................................passed
+* def search =..............................................................passed
+* def req = read('envelope2.xml')...........................................passed
+* match req ==..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="com.intuit.karate.testng.xml.xml" name="pretty print xml" time="0.060705">
+<system-out><![CDATA[* def search = { number: '123456', wireless: true, voip: false, tollFree: false }.passed
+* def xml = read('soap1.xml')...............................................passed
+* print 'pretty print:\n' + karate.prettyXml(xml)...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
